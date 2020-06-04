@@ -1,0 +1,2758 @@
+VERSION:055_5
+TN  NN 1006TConsulta de Cliente                     C00001 00
+VNNNNN 010002000203270590SSSD000000000000000000000000000000000000001
+/T=Consulta de Cliente
+/C=192192192
+*$2020-05-06 15:31:47LURRUTTY
+*N  NN *** INICIO GAP 1 ***
+*$2020-05-14 17:37:16LURRUTTY
+KNSSNS 010012002500930545000101
+/T=Selección
+/F=0013700NNN000000000Arial                                   
+*$2020-05-06 11:30:21LURRUTTY
+ NNNNN 34320   Opción Cliente/Cuenta                             I NSNK010033003300840147021211303010007000700300137000
+/V=1
+/F=0012700NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:13:01LURRUTTY
+*N  NN Enciende indicador por cliente
+*$2020-05-06 11:13:01LURRUTTY
+CNNNNN   00000000000000000000100
+/F=C34320.1=1
+/P=I200
+/M=Buscar por cliente
+*$2020-05-06 11:13:01LURRUTTY
+*N  NN Enciende indicador por cuenta
+*$2020-05-06 11:13:01LURRUTTY
+CNNNNN   00000000000000000000100
+/F=C34320.1=2
+/P=I201
+/M=Buscar por cuenta
+*$2020-05-06 11:13:01LURRUTTY
+KNSSNS 010110002502470545000101
+/T=Cuentas del Cliente
+/F=0013700NNN000000000Arial                                   
+*$2020-05-06 16:03:33LURRUTTY
+ NNNNN 34151   Cliente                                           I SSN 010128012501510249021010000000129003901490118000
+/?=I200Y!I201
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:13:46LURRUTTY
+CNNNNN ME00000000000000000000100
+/?=I200
+/F=C34151=0
+/M=Cliente ingresado con valor = 0
+*$2020-05-06 11:13:46LURRUTTY
+*N  NN *** INICIO GAP 33 ***
+*$2020-05-14 17:38:43LURRUTTY
+ NNNNN 34513   Código del Cliente                                INNSNA000007015200300302021011000000007000700300137000
+/?=I200
+/V=C34151
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-14 17:38:29LURRUTTY
+ NNNNN 34510   Tipo de documento                                 INNNN 000007015200300202001011000000007000700300137000
+/?=I200
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-14 17:38:29LURRUTTY
+ NNNNN 34511   Nro. Documento                                    INNSN 000007015200300452001011000000007000700300137000
+/?=I200
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-14 17:38:29LURRUTTY
+ NNNNN 34515   Nro. Persona                                      INNSN 000007015200300302021011000000007000700300137000
+/?=I200
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-14 17:38:29LURRUTTY
+CNNNNN  R00000000000000000000100
+/?=I200
+/R=221
+*$2020-06-04 08:58:38LURRUTTY
+CNNNNN   00000000000000000000100
+/?=I200
+/F=C535=1
+/P=I300
+*$2020-06-04 08:58:38LURRUTTY
+ NNNNN 01401   Numero Persona                                    INNSNA000007015200300302021011000000007000700300137000
+/?=I200YI300
+/V=C34515
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:58:57LURRUTTY
+ NNNNN 01404   Sexo                                              INNNN 000007015200300202001011000000007000700300137000
+/?=I200YI300
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:58:57LURRUTTY
+ NNNNN 01854   Nro. Persona                                      INNSNA000007015200300302021011000000007000700300137000
+/?=I200YI300
+/V=C34515
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:58:57LURRUTTY
+ NNNNN 01855   Tipo Documento                                    INNNNA000007015200300202001011000000007000700300137000
+/?=I200YI300
+/V=C34510
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:58:57LURRUTTY
+ NNNNN 01856   Nro. Documento                                    INNSNA000007015200300452001011000000007000700300137000
+/?=I200YI300
+/V=C34511
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:58:57LURRUTTY
+ NNNNN 33324   NRO_TRAMITE                                       INNSN 000007015200300302021011000000007000700300137000
+/?=I200YI300
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:58:57LURRUTTY
+ NNNNN 33320   TIPO_DOC_FISICO                                   INNSN 000007015200300202001011000000007000700300137000
+/?=I200YI300
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:58:57LURRUTTY
+ NSSNN 33322   NUM_DOC_FISICO                                    INNSN 000007015200300452001011000000007000700300137000
+/?=I200YI300
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:58:57LURRUTTY
+ NNNNN 03895                                                     INNNNA000007015200300452001011000000007000700300137000
+/?=I200YI300
+/V=C1404
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:58:57LURRUTTY
+ NNNNN 03894                                                     INNNNA000007015200300452001011000000007000700300137000
+/?=I200YI300
+/V=C33324
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:58:57LURRUTTY
+ NNNNN 03893                                                     INNNNA000007015200300452001011000000007000700300137000
+/?=I200YI300
+/V=C33322
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:58:57LURRUTTY
+DN  NN 1000SS
+/?=I200YI300
+*$2020-06-04 08:58:57LURRUTTY
+ NSSNS 00902   Código Cliente                                    INNNNA010123015701460262020011000000123004201460142000
+/?=I200
+/V=C34151
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:13:46LURRUTTY
+ NNNNN 01002   Nomb.Reducido                                     INNSN 000007015000270330000011000000007000700270126000
+/?=I200
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:13:46LURRUTTY
+ NSSNS 01000   Nombre                                            ICNNN 010129027901520534001010500000071007500910185000
+/?=I200
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0011700SNN000000000Arial                                   
+*$2020-05-06 11:13:46LURRUTTY
+ NNNNN 01040   Tipo  Cliente                                     INNNN 000007015200300202001011000000007000700300137000
+/?=I200
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:13:46LURRUTTY
+ NSSNN 00150   No. de Asiento                                    INNSN 000007015000270270000011000000007000700270126000
+/?=I200
+*$2020-05-06 11:13:46LURRUTTY
+ NNNNN 01803   Nro. Cliente                                      INNSNA000007015000270210000211003000007000700270126000
+/?=I200
+/V=C0902
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:13:46LURRUTTY
+ NNNNN 34222   Cuenta                                            I NSN 010158012501810249001210003000158003901780118000
+/?=C34151.1>0OI201
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:13:46LURRUTTY
+CNNNNN ME00000000000000000000100
+/F=C34222=0
+/M=Registro Inexistente en Saldos
+*$2020-05-06 11:13:46LURRUTTY
+ NSSNS 00902   Cliente                                           IDNNNA010187012502100249021010500000187003902070118000
+/?=I201
+/V=C1803
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:13:46LURRUTTY
+ NNNNN 01002   Nomb.Reducido                                     INNSN 000007015000270330000011000000007000700270126000
+/?=I201
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:13:46LURRUTTY
+ NSSNS 01000   Nombre                                            ICNNN 010187025402100534001010500000071007500910185000
+/?=I201
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0011700SNN000000000Arial                                   
+*$2020-05-06 11:13:46LURRUTTY
+ NNNNN 01040   Tipo  Cliente                                     INNNN 000007015200300202001011000000007000700300137000
+/?=I201
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:13:46LURRUTTY
+ NSSNN 00150   No. de Asiento                                    INNSN 000007015000270270000011000000007000700270126000
+/?=I201
+*$2020-05-06 11:13:46LURRUTTY
+ NNNNN 01803   Nro. Cliente                                      INNSNA000007015000270210000211003000007000700270126000
+/?=I201
+/V=C0902
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:13:46LURRUTTY
+*N  NN *** FIN GAP 1 ***
+*$2020-05-14 17:38:01LURRUTTY
+ NNNNN 34513   Código del Cliente                                INNSNA000007015200300302021011000000007000700300137000
+/?=I201
+/V=C902
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-14 17:39:09LURRUTTY
+ NNNNN 34510   Tipo de documento                                 INNNN 000007015200300202001011000000007000700300137000
+/?=I201
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-14 17:39:09LURRUTTY
+ NNNNN 34511   Nro. Documento                                    INNSN 000007015200300452001011000000007000700300137000
+/?=I201
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-14 17:39:09LURRUTTY
+ NNNNN 34515   Nro. Persona                                      INNSN 000007015200300302021011000000007000700300137000
+/?=I201
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-14 17:39:09LURRUTTY
+CNNNNN  R00000000000000000000100
+/?=I201
+/R=221
+*$2020-06-04 08:59:17LURRUTTY
+CNNNNN   00000000000000000000100
+/?=I201
+/F=C535=1
+/P=I300
+*$2020-06-04 08:59:23LURRUTTY
+ NNNNN 01401   Numero Persona                                    INNSNA000007015200300302021011000000007000700300137000
+/?=I201YI300
+/V=C34515
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:59:39LURRUTTY
+ NNNNN 01404   Sexo                                              INNNN 000007015200300202001011000000007000700300137000
+/?=I201YI300
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:59:39LURRUTTY
+ NNNNN 01854   Nro. Persona                                      INNSNA000007015200300302021011000000007000700300137000
+/?=I201YI300
+/V=C34515
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:59:39LURRUTTY
+ NNNNN 01855   Tipo Documento                                    INNNNA000007015200300202001011000000007000700300137000
+/?=I201YI300
+/V=C34510
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:59:39LURRUTTY
+ NNNNN 01856   Nro. Documento                                    INNSNA000007015200300452001011000000007000700300137000
+/?=I201YI300
+/V=C34511
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:59:39LURRUTTY
+ NNNNN 33324   NRO_TRAMITE                                       INNSN 000007015200300302021011000000007000700300137000
+/?=I201YI300
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:59:39LURRUTTY
+ NNNNN 33320   TIPO_DOC_FISICO                                   INNSN 000007015200300202001011000000007000700300137000
+/?=I201YI300
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:59:39LURRUTTY
+ NNNNN 33322   NUM_DOC_FISICO                                    INNSN 000007015200300452001011000000007000700300137000
+/?=I201YI300
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:59:39LURRUTTY
+ NNNNN 03895                                                     INNNNA000007015200300452001011000000007000700300137000
+/?=I201YI300
+/V=C1404
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:59:39LURRUTTY
+ NNNNN 03894                                                     INNNNA000007015200300452001011000000007000700300137000
+/?=I201YI300
+/V=C33324
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:59:39LURRUTTY
+ NNNNN 03893                                                     INNNNA000007015200300452001011000000007000700300137000
+/?=I201YI300
+/V=C33322
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-04 08:59:39LURRUTTY
+DN  NN 1000SS
+/?=I201YI300
+*$2020-06-04 08:59:39LURRUTTY
+*N  NN *** Fin GAP 33 ***
+*$2020-05-14 17:39:09LURRUTTY
+ NSSNS 00001   Sucursal                                          INNNNA000024014600440230021011000000024003400440123000
+/V=C1591
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00007   Producto                                          INNNNA000052014600720230021011000000052003400720123000
+/V=C1592
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00003   Moneda                                            INNNNA000077014600970230021011000000077003400970123000
+/V=C1594
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNN 06400   Descripción                                       INNNN 000062024400820423001011000000040026300600483000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN255255255Arial                                   
+CNNNNN   00000000000000000000100
+/F=C6403='N'
+/P=I25
+/M=I25 Pesos Mon.Local
+CNNNNN   00000000000000000000100
+/F=C6403='I'
+/P=I21
+/M=I21 Unidad Indexada
+CNNNNN   00000000000000000000100
+/F=C6403='D'
+/P=I22
+/M=I22 Dolares
+CNNNNN   00000000000000000000100
+/F=A(C6402="EUR")
+/P=I23
+/M=I23 Euros
+CNNNNN ME00000000000000000000100
+/?=I21
+/M=Error - Moneda NO habilitada
+ NNNNN 00005   Cuenta                                            INNNNA000103038001230464021011000000103026801230357000
+/V=C34222
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:15:11LURRUTTY
+ NNNNN 00006   Referencia                                        INNNNF000103014601230230021011000000102003401220123000
+/V=C1595
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00008   Ordinal                                           INNNNF000007012600270147020011000000007000700270119000
+/V=C1596
+/F=0013700NNN000000128Arial                                   
+/f=0013700NNN000000128Arial                                   
+ NNNNN 01611   Intereses Dev                                     INNNN 000000012600200238020011000000000000000200112000
+/F=0013700NNN000000128Arial                                   
+/f=0013700NNN000000128Arial                                   
+CNNNNN ME00000000000000000000100
+/F=C9509=0
+/M=Registro Inexistente
+*N  NN --------------------Form. 7031---------------
+*N  NN Consulta de Persona titular del Cliente xa Form
+ NNNNN 33050   Id Dirección                                      INNSNA000007015200300302021011000000007000700300137000
+/V=C1803
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:20:47LURRUTTY
+ NNNNN 33051   Formato                                           INNNNK000007015200300202001011000000007000700300137000
+/?=C1040.1='F'
+/V=CF
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:20:47LURRUTTY
+ NNNNN 33051   Formato                                           INNNNK000007015200300202001011000000007000700300137000
+/?=C1040.1='J'
+/V=CJ
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:20:47LURRUTTY
+ NNNNN 33052   Tipo de Dirección                                 INNSNK000007015200300202001011000000007000700300137000
+/?=C1040.1='F'
+/V=PR
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:20:47LURRUTTY
+ NNNNN 33052   Tipo de Dirección                                 INNSNK000007015200300202001011000000007000700300137000
+/?=C1040.1='J'
+/V=L
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:20:47LURRUTTY
+ NNNNN 33060   Calle                                             INNNN 000007015200300452001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:20:47LURRUTTY
+ NNNNN 33061   Nro. Puerta                                       INNSN 000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:20:47LURRUTTY
+ NNNNN 33063   Apto/Dpto                                         INNSN 000007015200300452001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:20:47LURRUTTY
+ NNNNN 33074   Teléfono                                          INNSN 000007015200300302001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:20:47LURRUTTY
+ NNNNN 33062   Piso                                              INNNN 000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:27:27LURRUTTY
+ NNNNN 01504   Cód. Cliente                                      INNSNA000182020502050331021011000000209006002320164000
+/V=C902
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01506   Titularidad                                       INNSNK000007015200300202001011000000007000700300137000
+/V=T
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01509   Usuario Modif                                     INNSN 000007015200300202001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01505   Nro Persona                                       INNSN 000182020502050331021011000000209006002320164000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN Consulta de Persona física y jurídica
+ NNNNN 01401   Numero Persona                                    INNSNA000182020502050331021011000000209006002320164000
+/V=C1505
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01403   Estado Civil                                      INNSN 000182020502050331021011000000209006002320164000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN   00000000000000000000100
+/F=C9509#0
+/P=I200
+/M=PF
+ NNNNN 01421   Primer Nombre                                     INNSN 000182020502050331021011000000209006002320164000
+/?=I200
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01422   Segundo Nombre                                    INNSN 000182020502050331021011000000209006002320164000
+/?=I200
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01418   Apell. Paterno                                    INNSN 000182020502050331021011000000209006002320164000
+/?=I200
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01420   Apell. Materno                                    INNSN 000182020502050331021011000000209006002320164000
+/?=I200
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01451   No.Pers.Jurídic                                   INNSNA000182020502050331021011000000209006002320164000
+/?=!I200
+/V=C1505
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01452   Razon Social                                      INNSN 000182020502050331021011000000209006002320164000
+/?=!I200
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1001TAlta datos Interviniente y Mandante     A03071 00
+*$2020-05-22 09:26:23JBENTAN
+*N  NN INICIO GAP 09 PASIVAS -- IDENTIFICACIÓN INTERVINIENTE Y MANDANTE
+*$2020-05-22 09:27:45JBENTAN
+VNNNNN 200001000104100600SSSD000000000000000000000000000000000000000
+/T=Datos Interviniente y Mandante
+/C=192192192
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 06990   Sucursal                                          INNSNA000007015200300202021011000000007000700300137000
+/V=C001.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 06991   Asiento                                           INNSNA000007015200300302021011000000007000700300137000
+/V=C9501.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 06992   Fecha Proceso                                     INNSNA000007015200300302001011000000007000700300137000
+/V=C9500
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 06993   JTS OID                                           INNSNA000007015200300302021011000000007000700300137000
+/V=C1810.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 06995   Comentarios                                       INNSNK000007015200300452001011000000007000700300137000
+/V=Control interv. y mandante Oper 3508 depósito efectivo
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+KNNNNN 200020002001450565000101
+/T=Interviniente
+/F=0011700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34110   Tipo Persona Interviniente                        INNSNK000007015200300202001011000000007000700300137000
+/V=F
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34111   Tipo Doc. Interviniente                           I NSNA200041020200640352001010000000041005700640187000
+/?=C1861.1='F'
+/V=C1855.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34111   Tipo Doc. Interviniente                           I NSN 200041020200640356001010000000041005700640187000
+/?=C1861.1#'F'
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34112   Nro. Doc. Interviniente                           I NSNA200073020200960352021010000000073005700960187000
+/?=C1861.1='F'
+/V=C1856.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34112   Nro. Doc. Interviniente                           I NSN 200073020200960356021010000000073005700960187000
+/?=C1861.1#'F'
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+*N  NN MacroR para leer tabla ITF_AFIP_PUCA) **************************
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 41114   Documento                                         INNNNA000007015200300302021211003000007000700300137000
+/V=C34112
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00624   Guardo Denominación AFIP PUCA                     INNSNF000007015200300452001211003000007000700300137000
+/V=""
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN  R00000000000000000000100
+/R=91
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00624   Guardo Denominación AFIP PUCA                     INNSN 000007015200300452001211003000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+*N  NN Fin MacroR - C624 = C41119 (Denominación) *******************
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN   00000000000000000000100
+/F=F(LEN,C624)>0
+/P=I100
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN M 00000000000000000000100
+/?=!I100
+/M=Documento Interviniente no encontrado en PUCA AFIP.
+*$2020-05-22 09:27:45JBENTAN
+*N  NN MacroR para traer Número de Persona (C1854) y Tipo de Persona (C1861) **************************
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00751   Tipo Documento                                    INNNNA000007015200300202001011000000007000700300137000
+/V=C34111.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 03843   Nro Documento                                     INNSNA000007015200300452001011000000007000700300137000
+/V=C34112.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00618   Guardo Número de Persona                          INNNNK000007015200300302021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00556   Guardo Tipo de Persona                            INNNNK000007015200300202001211003000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN  R00000000000000000000100
+/R=90
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00618   Guardo Número de Persona                          INNNN 000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00556   Guardo Tipo de Persona                            INNNN 000007015200300202001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+*N  NN Fin MacroR - C618 = C1854 (Número de Persona) Y C556 = C1861 (Tipo de Persona) ***************
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN   00000000000000000000100
+/F=(C618>0)Y(C556='F')
+/P=I101
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN   00000000000000000000100
+/F=(C618>0)Y(C556='J')
+/P=I102
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00114   Texto                                             INNNNK000007015200300452001011000000007000700300137000
+/?=I102
+/V=El documento está asociado en la base de datos a una Persona Jurídica. El Interviniente debe ser una Persona Física. Está seguro de que desea continuar?
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN A 00000000000000000000110
+/?=I102
+/M=C114
+*$2020-05-22 09:27:45JBENTAN
+*N  NN MacroR para traer Nombres y Apellidos de Personas *******************************************
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00617   Número de Persona                                 INNNNA000007015200300302021011000000007000700300137000
+/V=C618
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 01449   Guardo 1er Nombre + 2do Nombre                    INNSNF000007015200300452001011000000007000700300137000
+/?=I101
+/V=""
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 01450   Guardo 1er Apellido + 2do Apellido                INNSNF000007015200300452001011000000007000700300137000
+/?=I101
+/V=""
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN  R00000000000000000000100
+/?=I101
+/R=360
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 01449   Guardo 1er Nombre + 2do Nombre                    INNSN 000007015200300452001011000000007000700300137000
+/?=I101
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 01450   Guardo 1er Apellido + 2do Apellido                INNSN 000007015200300452001011000000007000700300137000
+/?=I101
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+*N  NN Fin MacroR - C1449 = (Nombres de Persona) Y 1450 = (Apellidso de Persona) *****************
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34113   Nombre Interviniente                              IDNSNF200105020201280356001010500000105005701280187000
+/?=(I101)
+/V=F(RTRIM,C1449.0)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34113   Nombre Interviniente                              I NSNF200105020201280356001010000000105005701280187000
+/?=(I100)Y(!I101)
+/V=F(RIGHT,C624.0,F(LEN,C624)-F(POSSTR,F(LTRIM,C624)," "))
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34113   Nombre Interviniente                              I NSN 200105020201280356001010000000105005701280187000
+/?=(!I100)Y(!I101)
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34114   Apellido Interviniente                            ICNSNF200105036401280518001010500000136006201590192000
+/?=(I101)
+/V=F(RTRIM,C1450.0)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34114   Apellido Interviniente                            IENSNF200105036401280518001010000000136006201590192000
+/?=(I100)Y(!I101)
+/V=F(LEFT,C624,F(POSSTR,F(LTRIM,C624)," "))
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34114   Apellido Interviniente                            IENSN 200105036401280518001010000000136006201590192000
+/?=(!I100)Y(!I101)
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN   00000000000000000000100
+/A=I100
+/M=Apago indicadores para volver a usarlos
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN   00000000000000000000100
+/A=I101
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN   00000000000000000000100
+/A=I102
+*$2020-05-22 09:27:45JBENTAN
+KNNNNN 200155002003230565000001
+/T=Mandante
+/F=0011700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34116   Tipo Doc. Mandante                                I NSNA200180020202030356001010000000180005702030187000
+/V=C1855.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34117   Nro. Doc. Mandante                                I NSNA200211020202340356021010000000211005702340187000
+/V=C1856.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+*N  NN MacroR para leer tabla ITF_AFIP_PUCA) **************************
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 41114   Documento                                         INNNNA000007015200300302021211003000007000700300137000
+/V=C34117
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00624   Guardo Denominación AFIP PUCA                     INNSNF000007015200300452001211003000007000700300137000
+/V=""
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN  R00000000000000000000100
+/R=91
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00624   Guardo Denominación AFIP PUCA                     INNSN 000007015200300452001211003000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+*N  NN Fin MacroR - C624 = C41119 (Denominación) *******************
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN   00000000000000000000100
+/F=F(LEN,C624)>0
+/P=I100
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN M 00000000000000000000100
+/?=!I100
+/M=Documento Mandante no encontrado en PUCA AFIP.
+*$2020-05-22 09:27:45JBENTAN
+*N  NN MacroR para traer Número de Persona (C1854) y Tipo de Persona (C1861) **************************
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00751   Tipo Documento                                    INNNNA000007015200300202001011000000007000700300137000
+/V=C34116.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 03843   Nro Documento                                     INNSNA000007015200300452001011000000007000700300137000
+/V=C34117.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00618   Guardo Número de Persona                          INNNNK000007015200300302021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00556   Guardo Tipo de Persona                            INNNNK000007015200300202001211003000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN  R00000000000000000000100
+/R=90
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00618   Guardo Número de Persona                          INNNN 000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00556   Guardo Tipo de Persona                            INNNN 000007015200300202001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+*N  NN Fin MacroR - C618 = C1854 (Número de Persona) Y C556 = C1861 (Tipo de Persona) ***************
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN   00000000000000000000100
+/F=(C618>0)Y(C556='F')
+/P=I101
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN   00000000000000000000100
+/F=(C618>0)Y(C556='J')
+/P=I102
+*$2020-05-22 09:27:45JBENTAN
+*N  NN MacroR para traer Nombres y Apellidos de Personas *******************************************
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00617   Número de Persona                                 INNNNA000007015200300302021011000000007000700300137000
+/V=C618
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 01449   Guardo 1er Nombre + 2do Nombre                    INNSNF000007015200300452001011000000007000700300137000
+/?=I101
+/V=""
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 01450   Guardo 1er Apellido + 2do Apellido                INNSNF000007015200300452001011000000007000700300137000
+/?=I101
+/V=""
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN  R00000000000000000000100
+/?=I101
+/R=360
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 01449   Guardo 1er Nombre + 2do Nombre                    INNSN 000007015200300452001011000000007000700300137000
+/?=I101
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 01450   Guardo 1er Apellido + 2do Apellido                INNSN 000007015200300452001011000000007000700300137000
+/?=I101
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00924   Guardo Razón Social                               INNSNF000007015200300452001011000000007000700300137000
+/?=I102
+/V=""
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN  R00000000000000000000100
+/?=I102
+/R=362
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00924   Guardo Razón Social                               INNSN 000007015200300452001011000000007000700300137000
+/?=I102
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+*N  NN Fin MacroR - C1449 = (Nombres de Persona) Y 1450 = (Apellidso de Persona) *****************
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34115   Tipo Persona Mandante                             I NSNA200242020203110356001010110000242005702650197000
+/?=I101OI102
+/V=C556
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34115   Tipo Persona Mandante                             I NSN 200242020203110356001010110000242005702650197000
+/?=(!I101)Y(!I102)
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00114   Texto                                             INNNNK000007015200300452001011000000007000700300137000
+/?=(I101YC34115#'F')
+/V=El documento del Mandante está asociado en la base de datos a una Persona Física. Está seguro de que desea continuar?
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 00114   Texto                                             INNNNK000007015200300452001011000000007000700300137000
+/?=(I102YC34115='F')
+/V=El documento del Mandante está asociado en la base de datos a una Persona Jurídica. Está seguro de que desea continuar?
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+CNNNNN A 00000000000000000000110
+/?=(I101YC34115#'F')O(I102YC34115='F')
+/M=C114
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34118   Nombre Mandante                                   IDNSNF200273020202960356001010500000273005702960187000
+/?=(I101)Y(C34115='F')
+/V=F(RTRIM,C1449.0)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34118   Razón Social Mandante                             IDNSNA200273020202960510001010500000273005702960197000
+/?=(I102)Y(C34115#'F')
+/V=C924.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34118   Nombre Mandante                                   I NSNF200273020202960356001010000000273005702960187000
+/?=(I100)Y(!I101)Y(!I102)Y(C34115='F')
+/V=F(RIGHT,C624.0,F(POSSTR,F(LTRIM,C624.0)," "))
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34118   Razón Social Mandante                             I NSNF200273020202960356001010000000273005702960197000
+/?=(I100)Y(!I101)Y(!I102)Y(C34115#'F')
+/V=C624.0
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34118   Nombre Mandante                                   I NSN 200273020202960356001010000000273005702960187000
+/?=((!I100)Y(!I101)Y(!I102)Y(C34115='F'))O((I102)Y(C34115='F'))
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 14:13:23JBENTAN
+ NNNNN 34118   Razón Social Mandante                             I NSN 200273020202960510001010000000273005702960197000
+/?=((!I100)Y(!I101)Y(!I102)Y(C34115#'F'))O((I101)Y(C34115#'F'))
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 14:13:04JBENTAN
+ NNNNN 34119   Apellido Mandante                                 ICNSNF200273036402960514001010500000007000700300137000
+/?=(I101)Y(C34115='F')
+/V=F(RTRIM,C1450.0)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34119   Apellido Mandante                                 IENSNF200273036402960514001010000000007000700300137000
+/?=(I100)Y(!I101)Y(!I102)Y(C34115='F')
+/V=F(LEFT,C624.0,F(POSSTR,F(LTRIM,C624.0)," "))
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:27:45JBENTAN
+ NNNNN 34119   Apellido Mandante                                 IENSN 200273036402960514001010000000007000700300137000
+/?=((!I100)Y(!I101)Y(!I102)Y(C34115='F'))O((I102)Y(C34115='F'))
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 14:13:31JBENTAN
+*N  NN FIN GAP 09 PASIVAS -- IDENTIFICACIÓN INTERVINIENTE Y MANDANTE
+*$2020-05-22 09:27:45JBENTAN
+TN  NN 1006TConsulta de Saldo                       C00211 00
+VNSSNS 020001000104530797SSSD000000000000000000000000000000000000010
+/T="Cliente  "+C0002.1+"   "+C1000.1
+/C=192192192
+KNSSNS 020012002502380755000101
+/T=Datos de la Cuenta a Depositar
+/F=0013700NNN000000000Arial                                   
+*$2020-05-22 09:29:29JBENTAN
+ NSSNS 00001   Sucursal                                          IDNNNA020043020400660300021011500000043007500660189000
+/V=C0001.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06020   Nombre                                            ICNNN 020043033100660636001011500000097026001170505000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NSSNS 00007   Producto                                          IDNNNA020074020400970300021010500000074007500970189000
+/V=C0007.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06251   Descripción                                       ICNNN 020074033100970636001011500000128026001480505000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NSSNS 00003   Moneda                                            IDNNNA020105020401280300021011500000105007501280189000
+/V=C0003.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06400   Descripción                                       ICNNN 020105033101280489001011500000155026001750400000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 00005   Cuenta                                            IDNNNF020136020401590319021011500000136007501590189000
+/V=C0005.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00006   Operación                                         INNNNF000103014601230230021011000000102003401220123000
+/V=C0006.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00008   Ordinal                                           INNNNA000007012600270147020011000000007000700270119000
+/V=C0008.1
+/F=0013700NNN000000128Arial                                   
+/f=0013700NNN000000128Arial                                   
+ NSSNN 00025   Fecha Valor                                       INNSNA000174017001940290000011000000174003401940146000
+/V=C9500
+ NNNNN 01611   Intereses Dev                                     INNNN 000000012600200238020011000000000000000200112000
+/F=0013700NNN000000128Arial                                   
+/f=0013700NNN000000128Arial                                   
+ NSSNN 01651   Código Cancelación                                IINSN 020167020401900490001011500000167007501900195000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:29:27JBENTAN
+CN  NN ME00000000000000000000100
+/F=C1651='1'
+/M=Cuenta Cancelada
+ NSSNN 01679   Bloqueo/Afect.                                    IINSN 020198020402210489001011500000198007502210189000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:29:51JBENTAN
+CNNNNN M 00000000000000000000100
+/F=C1679='B'
+/P=I81
+/M=Cuenta Bloqueada
+CNNNNN ME00000000000000000000100
+/F=C1679='E'
+/M=Cuenta Embargada - No Puede Operar
+KNSSNS 020238002503080755000001
+/?=C1694='V'
+/T=Saldos
+/F=0013700NNN000000000Arial                                   
+CNNNNN M 00000000000000000000100
+/F=C1694='N'
+/M=El Saldo es de tipo No visualizable
+ NSSNS 01741   Saldo Actual                                      IDNNN 020260027102830429021010500000260007502830189000
+/?=1=0YC1694='V'
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06401   Simbolo Moneda                                    ICNNN 020260020602830240021010500000174003401940146000
+/?=1=0YC1694='V'
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06001   Disp. Cobertura                                   IDNNN 020254060602770741021010500000254046402770591000
+/?=1=0YC1694='V'
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06002   Disponible                                        IDNNN 020282060603050741021010500000283046403060540000
+/?=1=0YC1694='V'
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+KNSSNS 020306002503870755000001
+/T=Datos Depósito
+/F=0013700NNN000000000Arial                                   
+*$2020-05-22 09:31:12JBENTAN
+ NNNNN 00037   Importe Efectivo                                  I NSN 020328027103480429020011000000328007503480180000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:30:14JBENTAN
+ NNNNN 00067   Importe Cheques                                   I NSN 020359027103790429020011000000359007503790180000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00033   Total Depósito                                    IDNSNF020328057403480732021011500000328044603480551000
+/V=C37+C67
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:30:43JBENTAN
+CNNNNN ME00000000000000000000100
+/?=(C33=0)
+/M=Total Deposito-  No puede ser  = 0
+KNNNNN 020359044503820559000100
+/T=Cantidad Cheques
+/F=0012700NNN000000000Arial                                   
+ NNNNN 00065   Cant. Cheques                                     IENSN 020359064403820732021010000000072007500950164000
+/?=C67>0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00065   Cant. Cheques                                     IDNSNK020359064403820732021010500000072007500950164000
+/?=C67=0
+/V=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN ME00000000000000000000100
+/?=(C65=0)Y(C67>0)
+/M=Cantidad Cheques No puede ser  = 0
+*N  NN Busqueda por Cuenta Vieja TR 1012
+*N  NN Busqueda por Cuenta Nueva TR 1014
+*N  NN Cre_Parametros = 779 Fecha Tope Control Cta Vieja
+ NNNNN 04620   Código param.                                     INNSNK000061069000840740001011000000061054500840675000
+/V=779
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 07516   Fecha Control                                     INNSN 000007015200300302001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN   00000000000000000000100
+/F=(C7516=C9500)O(C7516>C9500)
+/P=I112
+CNNNNN   00000000000000000000100
+/F=C9500>C7516
+/P=I114
+*N  NN ------------------ Logica de Restricciones y Bloqueos ------------------
+*$2020-06-03 14:22:32GGC
+ NNNNN 04355                                                     INNSNA020325039003480548001011000000295007503150180000
+/V=C1810
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-03 14:22:32GGC
+ NNNNN 00504   Numero                                            INNSNA020325039003480548001011000000295007503150180000
+/V=C33
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-03 14:22:32GGC
+ NNNNN 09209   Ordinal Tabla                                     INNSNA020325039003480548001011000000295007503150180000
+/V=C9503
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-03 14:22:32GGC
+ NNNNN 00556   Alfa de 1                                         INNSNK020325039003480548001011000000295007503150180000
+/V=C
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-03 14:31:55GGC
+*N  NN ---Ejecucion de SP
+*$2020-06-03 14:22:32GGC
+CNNNNN  m00000000000000000000100
+/R=TOP/CLIENTES SP_PROD_BUSCO_RESTRICCION,C4355 I,C504 I,C9209 I, C556 I, C3267 O,  C114 O
+*$2020-06-03 14:22:32GGC
+*N  NN ---Mensaje Bloqueante o de Advertencia
+*$2020-06-03 14:22:32GGC
+CNSSNS ME00000000000000000000110
+/?=A( C3267="B")
+/M=C114
+*$2020-06-03 14:22:32GGC
+CNSSNS M 00000000000000000000110
+/?=A( C3267="A")
+/M=C114
+*$2020-06-04 12:05:10GGC
+*N  NN --------------------------------------------------------------------------
+*$2020-06-03 14:22:32GGC
+*N  NN Falta analisis definir Disponible
+*$2020-06-03 14:22:25GGC
+TN  NN 1006TConsulta Cliente-Paquetes               C00451 00
+ NNNNN 08980   Codigo Cliente                                    INNSNA000007015000270330000011000000007000700270126000
+/V=C0002.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 08981   Producto                                          INNSNA000007015000270330000011000000007000700270126000
+/V=C0007.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 08982   Moneda                                            INNSNA000007015000270330000011000000007000700270126000
+/V=C0003.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 09509   Status Interno                                    INNSN 000007015000270330000011000000007000700270126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 08984   Paquete Activo                                    INNSN 000007015000270330000011000000007000700270126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 08983   Paquete                                           INNSN 000007015000270330000011000000007000700270126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00076   Paquete                                           INNSNF000007015000270330000011000000007000700270126000
+/V=C8983
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN M 00000000000000000000110
+/F=C76#0
+/P=I161
+/M="Cliente pertenece al Paquete "+C76
+TN  NN 1006TConsulta Importe Mínimo                 C03111 00
+/?=!I161
+*$2020-05-22 09:31:43JBENTAN
+*N  NN Leer tabla topesproducto para el codigo Moneda
+ NNNNN 05262   Cod. Producto                                     INNNNA000050014400700172020010000000050001100700137000
+/V=C0007.3
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NNNNN 05263   Moneda                                            INNNNA000050014400700172020010000000050001100700137000
+/V=C0003.3
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NNNNN 05270   Moneda Deposito                                   INNNN 000050014400700172020010000000050001100700137000
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NSSNS 00003   Moneda                                            INNNNA000052014600720227020011000000053001200730138000
+/V=C5270
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06440   T.cambio BC                                       INNNN 000052014600720227020011000000053001200730138000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN   00000000000000000000100
+/F=C5263.5#C5270.5
+/P=I30
+*N  NN Valores en Moneda de la Cuenta
+ NNNNN 00034   Importe M/Nac                                     INNSNF000007013600270376000010000000007000700270112000
+/?=I25YI30
+/V=C6440*C5268
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00034   Importe M/Nac                                     INNSNF000042014000620380000010000000042001100620116000
+/?=I25Y!I30
+/V=C5268
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00034   Importe UI Min                                    INNSNF000087015901070399000010000000087003001070135000
+/?=I21
+/V=C5268
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00036   Importe UI Max                                    INNSNF000087015901070399000010000000087003001070135000
+/?=I21
+/V=C5269
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00034   Importe U$S                                       INNSNF000133017601530416000010000000133004701530152000
+/?=I22
+/V=C5268
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00034   Importe EU                                        INNSNF000180019302000433000010000000180006402000169000
+/?=I23
+/V=C5268
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN   00000000000000000000100
+/?=C33.3<C34
+/P=I51
+CNNNNN   00000000000000000000100
+/?=I21Y(C33.3>C36)
+/P=I52
+VNNNNN 520145031001210487SSSD000000000000000000000000000000000000000
+/T=Mensaje
+/?=I51OI52
+/C=192192192
+ NNNNN 00903                                                     ICNSNF520023003000460460001010500000007000700270126000
+/?=I51Y!I30
+/V="Para Moneda "+C6401.3+" el Importe mínimo es "+C6401.3+" "+C0034      
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00903                                                     ICNSNF520023003000460460001010500000007000700270126000
+/?=I51YI30
+/V="Para Moneda "+C6401.3+" el Importe mínimo es "+"$UY "+C0034      
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00903                                                     ICNSNF520023003000460460001010500000007000700270126000
+/?=I52
+/V="Para Moneda "+C6401.3+" el Importe Máximo es "+C6401.3+" "+C0036  
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN  E00000000000000000000100
+/?=I51
+CNNNNN  E00000000000000000000100
+/?=I52
+TNNNNN 1006TCabezal de Cheques (Uno a uno)          C00001 00
+/?=C67.3>0
+VNSSNS 040001000104510800NNNV000000000000000000000000000000000000000
+/T=Cheques a Depositar
+/C=192192192
+KNSNNS 040013000700360093000100
+/T=Banco 
+/F=0012700NNN000000000Arial                                   
+KNSNNS 040013043500360496000100
+/T=Sucursal
+/F=0012700NNN000000000Arial                                   
+KNSNNS 040013050000360581000100
+/T=Nro. Cheque                
+/F=0012700NNN000000000Arial                                   
+KNSNNS 040013058500360666000100
+/T=Nro. Serie            
+/F=0012700NNN000000000Arial                                   
+KNSNNS 040013069500360751000100
+/T=Importe               
+/F=0012700NNN000000000Arial                                   
+ NSSNS 00003   Moneda                                            INNNNA000073011100930208020011000000073003200930093000
+/V=C0003.1
+/f=0013700NNN000000000Arial                                   
+ NNNNN 00035   Importe                                           INNSNK000007013600270376000011000000007000700270112000
+/V=0
+/F=0011700NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 00036   Importe                                           INNSNK000007013600270376000011000000007000700270112000
+/V=0
+/F=0011700NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 00037   Importe                                           INNSNK000007013600270376000011000000007000700270112000
+/V=0
+/F=0011700NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+TNNNNN 1006TMuestreo de Cheques (Uno a uno)         C00001 00
+/?=C67.3>0
+ NNNNN 09517   Num Línea Sec.                                    INNNNK000007017100310198020011000000007000700310160000
+/V=40
+/F=0013400NNN255255255Arial                                   
+/f=0013400NNN255255255Arial                                   
+TN  NN 1006TDatos de cada Cheque (Banco, Nro. etc)  C03291 00
+/?=C67.3>0
+ NNNNN 00352   Cant.Cheques                                      INNSNF000007013600270376020011000000007000700270112000
+/V=C352+1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN ME00000000000000000000100
+/F=C352>C65.3
+/M=Cantidad de Cheques Mayor al Total
+VNSSNS 050221000102500800NNND000000000000000000000000000000000000000
+/T=Ingreso de Cheques
+/C=192192192
+*$2020-06-03 16:19:09FMK
+KNNNNN 050006001201710774000101
+/T=Datos
+/F=0012700NNN000000000Arial                                   
+*$2020-06-03 16:19:14FMK
+ NNNNN 00410   Ingrese Cheque                                    I NSN 050030017000530672000011000000030003700530147000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN   00000000000000000000100
+/F=(C410=' ')
+/A=I20
+CNNNNN ME00000000000000000000100
+/?=F(VALIDCHARS,1,C0410,"0123456789")=0
+/M=Caracteres inválidos...
+*$2020-06-03 16:46:26FMK
+*N  NN Control para que no permita seguir sin ingresar la banda del cheque
+CNNNNN ME00000000000000000000100
+/F=!I20
+/M=Error - debe ingresar datos del cheque
+CNNNNN ME00000000000000000000100
+/?=I20
+/F=F(LEN,C410)#29
+/M=Debe ingresar banda de 29 caracteres!!
+*$2020-06-01 09:30:55ANDRES
+ NNNNN 00068   Importe                                           I NNNK050061017000840308020010000000061003700840127000
+/?=C65.3#1
+/V=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00068   Importe                                           IDNNNA050061017000840308021010500000061003700840127000
+/?=C65.3=1
+/V=C0067.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 11:51:16ANDRES
+CNNNNN ME00000000000000000000100
+/F=(C68=0)
+/M=El Importe No Puede Ser = 0
+CNNNNN ME00000000000000000000100
+/F=(C68<0)
+/M=El Importe No Puede Ser menor a  0
+CNNNNN ME00000000000000000000100
+/F=(C68>C67.3)
+/M=Importe del Cheque mayor al Total Depositado
+ NNNNN 00351   Acumula Imptes                                    INNSNF000007013600270376020011000000007000700270112000
+/V=C351+C68
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN ME00000000000000000000100
+/?=C351>C0067.3
+/M=Importe acumulado Mayor a Importe Depositado 
+ NSSNN 05501   Codigo de Banco                                   IINSNF050060049400830549121010500000061033000840430000
+/?=I20
+/V=F(MID,C410,1,3)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 11:51:40ANDRES
+CNNNNN ME00000000000000000000100
+/?=I20Y1=0
+/F=A(C5501#"311")
+/M=Error- Cheque ingresado NO es del banco
+*$2020-06-03 13:50:03GGC
+ NSSNN 04905   Código de Banco                                   INNSNA050061050200840562121010000000061034500840445000
+/?=I20
+/V=C5501
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 11:18:56ANDRES
+ NNNNN 04906   Sucursal                                          IINSNF050061066900840751121010500000061058000840644000
+/?=I20
+/V=F(MID,C410,4,3)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 14:49:44ANDRES
+CNNNNN ME00000000000000000000100
+/?=I20Y1=0
+/F=(C9509=0)
+/M=Error - Banco No Registrado 
+*$2020-06-01 14:56:34ANDRES
+ NNNNN 00049   Cuenta Origen                                     IINSNF050092019401150308121010500000092003701150123000
+/?=I20
+/V=F(MID,C410,19,11)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 14:58:00ANDRES
+ NSSNS 04161   Número Cheque                                     I NSNK050092044801150549120010000000092033001150440000
+/?=!I20
+/V=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 11:51:59ANDRES
+ NSSNS 04161   Número Cheque                                     IDNSNF050092044801150549121010500000092033001150440000
+/?=I20
+/V=F(MID,C410,11,8)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 14:54:29ANDRES
+CNSSNS ME00000000000000000000100
+/?=!I20
+/F=(C4161=0)
+/M=Error - Dato ingresado con valor = 0
+ NSSNN 00664   Cod.Postal                                        IINSNF050092066901150751021010500000092058001150644000
+/?=I20
+/V=F(MID,C410,7,4)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 14:51:24ANDRES
+ NNNNN 00537   Serie                                             I NSNK050121026301440306000010000000122003701450073000
+/?=I20
+/V=0
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-03 16:11:54FMK
+*N  NN Inicio GAP-5 Ingreso de Cheques al Sistema
+*$2020-06-03 17:15:53FMK
+KNNNNN 050114032701600754001001
+/?=I20
+/F=0013400NNN255000000Arial                                   
+*$2020-06-03 17:46:02FMK
+ NNNNN 01407   bco - suc - cod postal                            INNSNF000007015200300452001011000000007000700300137000
+/?=I20
+/V=F(MID, C0410.0,1,10)
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-03 17:46:02FMK
+ NNNNN 05030   Digito 1                                          IDNNNA050130041201530441021010500000130034401530392000
+/?=I20
+/V=C1407.0
+/C=255255255
+/F=0013700NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+*$2020-06-03 17:46:02FMK
+ NNNNN 01408   Valida Digito 1                                   INNSNF000007015200300452001011000000007000700300137000
+/?=I20
+/V=F(MID,C0410.0,1,10)+C5030.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-03 17:46:02FMK
+ NNNNN 01407   cheque                                            INNSNF000130040401530433001011000000007000700300137000
+/?=I20
+/V=F(MID, C0410.0,11,8)
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-03 17:46:02FMK
+ NNNNN 05031   Digito 2                                          IDNNNA050130054801530577021010500000130048001530528000
+/?=I20
+/V=C1407.0
+/C=255255255
+/F=0013700NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+*$2020-06-03 17:46:02FMK
+ NNNNN 01408   Valida Digito 2                                   INNSNF000007015200300452001011000000007000700300137000
+/?=I20
+/V=F(MID,C0410.0,11,8)+C5031.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-03 17:46:02FMK
+ NNNNN 01407   cuenta                                            INNSNF000007015200300452001011000000007000700300137000
+/?=I20
+/V=F(MID, C0410.0,19,11)
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-03 17:46:02FMK
+ NNNNN 05032   Digito 3                                          IDNNNA050130070001530729021010500000130063201530680000
+/?=I20
+/V=C1407.0
+/C=255255255
+/F=0013700NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+*$2020-06-03 17:46:02FMK
+ NNNNN 01408   Valida Digito 3                                   INNSNF000007015200300452001011000000007000700300137000
+/?=I20
+/V=F(MID,C0410.0,19,11)+C5032.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-03 17:46:02FMK
+*N  NN Fin GAP-5 Ingreso de Cheques al Sistema
+*$2020-06-03 17:14:57FMK
+*N  NN **************************************************
+*N  NN Cantidad de cheques
+ NSSNS 02619   cant. cheques                                     INNSNF050092046101150562121010000000092034501150455000
+/V=C2619+1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN **************************************************
+TN  NN 1008TChequeras                               S01051 00
+/?=C67.3>0
+/F=C2951<=C4161.8 and C2952>=C4161.8
+ NNNNN 02941   Sucursal                                          INNNNA000007012600270236000011000000007000700270119000
+/V=C4906.8
+/F=0013400NNN255255255Arial                                   
+/f=0013400NNN255255255Arial                                   
+ NNNNN 02942   Cuenta                                            INNNNA000007012600270236000011000000007000700270119000
+/V=C0049.8
+/F=0013400NNN255255255Arial                                   
+/f=0013400NNN255255255Arial                                   
+ NNNNN 02943   Moneda                                            INNNNA000007012600270236000011000000007000700270119000
+/V=C003.8
+/F=0013400NNN255255255Arial                                   
+/f=0013400NNN255255255Arial                                   
+ NNNNN 02944   Operacion                                         INNNNK000007012600270236000011000000007000700270119000
+/V=0
+/F=0013400NNN255255255Arial                                   
+/f=0013400NNN255255255Arial                                   
+ NNNNN 02950   Serie                                             INNNNA000007012600270236000011000000007000700270119000
+/V=C537.8
+/F=0013400NNN255255255Arial                                   
+/f=0013400NNN255255255Arial                                   
+ NNNNN 02958   Ordinal                                           INNNNK000007012600270236000011000000007000700270119000
+/V=0
+/F=0013400NNN255255255Arial                                   
+/f=0013400NNN255255255Arial                                   
+ NNNNN 02956   Cantidad                                          INNNN 000007012600270236000011000000007000700270119000
+/F=0013400NNN255255255Arial                                   
+/f=0013400NNN255255255Arial                                   
+TN  NN 1008TObtengo Jts_Oid Cheques (Por Secuencial)S01101 00
+/?=C67.3>0YC2619.8=1
+/O=C1228 DESC
+*$2020-06-01 18:24:01ANDRES
+ NNNNN 01230   Serie Cheque                                      INNSN 000007015200270452001011000100007000700270137000
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-06-01 18:07:27ANDRES
+ NNNNN 50033   JTS                                               INNNNF000007015200270452021011000100007000700270137000
+/V=C1228
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-06-01 18:09:50ANDRES
+TN  NN 1001TConsulta Cuenta a Debitar               A01101 00
+/?=C67.3>0
+*$2020-06-01 18:04:37ANDRES
+ NNNNN 01228   JTS_OID                                           INNNNF000007015200300302021011000000007000700300137000
+/V=C50033.10+C2619.8
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 18:12:48ANDRES
+ NSSNN 01260   Banda Magnetica                                   INNSNA000007015200300452001011000000007000700300137000
+/V=C410.8
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:47:37ANDRES
+ NNNNN 01251   Importe                                           INNSNA000007015200300302021011000000007000700300137000
+/V=C068.8
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:47:41ANDRES
+ NNNNN 01250   Nro Cuenta                                        INNSNA000007015200300302021011000000007000700300137000
+/V=C049.8
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:47:45ANDRES
+ NNNNN 01229   Nro de Cheque                                     INNSNA000007015200300302021011000000007000700300137000
+/V=C4161.8
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:47:47ANDRES
+ NNNNN 01259   Nro Maquina                                       INNSNF000007015200300202021011000000007000700300137000
+/V=C9501\10000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:45:10ANDRES
+VNSSNS 200001000104560799SSSD000000000000000000000000000000000000011
+/T="Cliente  "+C0002+"   "+C1000
+/C=192192192
+KNSSNS 200014001802340762000101
+/T=Datos de la Cuenta a Debitar
+/F=0013700NNN000000000Arial                                   
+ NSSNS 00001   Sucursal                                          IDNNNA200044019900670295021011500000044007300670161000
+/V=C4906.8
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06020   Nombre                                            ICNNN 200044032300670628001011500000097026001170505000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+*N  NN Se debe cambiar por Producto 2101
+*$2020-06-01 15:42:30ANDRES
+ NSSNS 00007   Producto                                          IDNNNA200073019900960295021010500000073007300960161000
+/?=1=0
+/V=C2963.8
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:42:30ANDRES
+ NSSNS 00007   Producto                                          IDNNNA200073019900960295021010500000073007300960161000
+/V=C0007.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:42:30ANDRES
+ NSSNS 06251   Descripción                                       ICNNN 200073032300960628001011500000128026001480505000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NSSNS 00003   Moneda                                            IDNNNA200102019901250295021011500000102007301250161000
+/V=C0003.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06400   Descripción                                       ICNNN 200102032301250481001011500000155026001750400000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 00005   Cuenta                                            IDNNNF200131019901540295021011500000131007301540161000
+/V=C0049.8
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00006   Operación                                         INNNNK000103014601230230021011000000102003401220123000
+/V=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00008   Ordinal                                           INNNNA000007012600270147020011000000007000700270119000
+/V=C0008.0
+/F=0013700NNN000000128Arial                                   
+/f=0013700NNN000000128Arial                                   
+ NNNNN 00025   Fecha Valor                                       INNSNA000007015000270270000011000000007000700270126000
+/V=C9500
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNN 01827   TipoDeposito                                      INNSN 000007015200300202021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN ME00000000000000000000100
+/F=C9509=0
+/M=Error - Cuenta inexistente
+ N  NN 00002   Cliente                                           INNSNA000007015200300202021011000000007000700300137000
+/V=C1803
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01002   Nomb.Reducido                                     INNNN 000102032301250481001011000000155026001750400000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NSSNS 01000   Nombre                                            INNNN 000040026600600484001011000000071007500910185000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0011700SNN000000000Arial                                   
+ NNNNN 01611   Intereses Dev                                     INNNN 000000012600200238020011000000000000000200112000
+/F=0013700NNN000000128Arial                                   
+/f=0013700NNN000000128Arial                                   
+ NSSNN 01651   Código Cancelación                                IINSN 200160007301830192001011500000160007301830187000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:37:47JBENTAN
+CNNNNN ME00000000000000000000100
+/F=(C1651='1')
+/M=Cuenta Cancelada
+ NSSNN 01679   Bloqueo/Afect.                                    IINSN 200189019902120425001011500000189007302120187000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 09:37:56JBENTAN
+CNNNNN M 00000000000000000000100
+/F=(C1679='B')
+/M=Cuenta Bloqueada
+CNNNNN ME00000000000000000000100
+/F=(C1679='E')
+/M=Cuenta Embargada-No Puede Operar
+KNSSNS 200249001803760411000001
+/?=1=0Y(C1694='V')
+/T=Saldos
+/F=0013700NNN000000000Arial                                   
+ NSSNS 01740   Saldo Anterior                                    INNNN 200275026502980423021010000000275007502980189000
+/?=1=0Y(C1694='V')
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN M 00000000000000000000100
+/F=C1694='N'
+/M=El Saldo es de tipo No visualizable
+ NSSNS 01741   Saldo Actual                                      IDNNN 200276023302990391021010500000276004902990163000
+/?=1=0Y(C1694='V')
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06401   Simbolo Moneda                                    ICNNN 200276017502990215021010500000174003401940146000
+/?=1=0Y(C1694='V')
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06001   Disp. Cobertura                                   IDNNN 200309017503320310021010500000309004903320163000
+/?=1=0Y(C1694='V')
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06002   Disponible                                        IDNNN 200341017503640310021010500000341004903640163000
+/?=1=0Y(C1694='V')
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1006TConsulta del Cheque y Firmas            C01651 00
+/?=C67.3>0
+ NSSNS 00001   Sucursal                                          IDNNNA200044019900670295021011500000044007300670161000
+/V=C0001.11
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06020   Nombre                                            ICNNN 200044032300670628001011500000097026001170505000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+*N  NN Ver el Producto es Cta Cte
+ NSSNS 00007   Producto                                          IDNNNA200073019900960295021010500000073007300960161000
+/V=C0007.11
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06251   Descripción                                       ICNNN 200073032300960628001011500000128026001480505000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NSSNS 00003   Moneda                                            IDNNNA200102019901250295021011500000102007301250161000
+/V=C0003.11
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06400   Descripción                                       ICNNN 200102032301250481001011500000155026001750400000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 00005   Cuenta                                            IDNNNF200131019901540295021011500000131007301540161000
+/V=C0005.11
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00006   Operación                                         INNNNK000103014601230230021011000000102003401220123000
+/V=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00008   Ordinal                                           INNNNA000007012600270147020011000000007000700270119000
+/V=C0008.0
+/F=0013700NNN000000128Arial                                   
+/f=0013700NNN000000128Arial                                   
+ NNNNN 00025   Fecha Valor                                       INNSNA000007015000270270000011000000007000700270126000
+/V=C9500
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ N  NN 00002   Cliente                                           INNSNA000007015200300202021011000000007000700300137000
+/V=C1803
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01002   Nomb.Reducido                                     INNNN 000102032301250481001011000000155026001750400000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NSSNS 01000   Nombre                                            INNNN 000040026600600484001011000000071007500910185000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0011700SNN000000000Arial                                   
+ NNNNN 01611   Intereses Dev                                     INNNN 000000012600200238020011000000000000000200112000
+/F=0013700NNN000000128Arial                                   
+/f=0013700NNN000000128Arial                                   
+*N  NN ******************************************************************************************************************************************************
+*N  NN *** Datos del Cheque y control del Estado.-
+*N  NN ******************************************************************************************************************************************************
+VNSSNS 440169042602630365SSSD000000000000000000000000000000000000011
+/T="Cuenta No. : "+C0005.0
+/C=192192192
+KNSSNS 440008001101260344000101
+/T=Datos del Cheque
+/F=0013700NNN000000000Arial                                   
+ NNNNN 01098   Serie                                             IDNSNA440038017500610268001011500000038006500610160000
+/V=C0537.8
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01090   Nro. Cheque                                       IDNNNF440074017500970268021011500000074006500970160000
+/V=C4161.8
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01778   MARCA_JTS                                         INNNN 440115022901380379021011000000115007601380196000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN ******************************************************************************************************************************************************
+*N  NN *** Defino entrada en las Transacciones siguientes...
+*N  NN ******************************************************************************************************************************************************
+*N  NN *** Siempre prendo I97 para pasar por Tr. 3 en todos los casos
+*N  NN *** salvo que los Cheques sean Certificados ó una Letra de Cambio.-
+CNNNNN   00000000000000000000100
+/P=I97
+*N  NN *** Si el Estado es Certificado, contabilizo distinto.-
+CNNNNN M 00000000000000000000100
+/?=(C1093='T')
+/P=I98
+/A=I97
+/M=Cheque Certificado...
+*N  NN *** Si es una Letra de Cambio, contabilizo distinto.-
+CNNNNN M 00000000000000000000100
+/?=(1=0)
+/P=I99
+/M=Cheque Certificado...
+*N  NN ******************************************************************************************************************************************************
+*$2020-06-01 15:52:34ANDRES
+*N  NN *** Para mostrar las Firmas
+*$2020-06-01 15:52:34ANDRES
+*N  NN ******************************************************************************************************************************************************
+*$2020-06-01 15:52:34ANDRES
+ NNNNN 00641   Alfa de 24(52A)                                   INNSNF000007015000273210020011000000007000700270126000
+/V="02"+C1810.11
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+*$2020-06-01 15:56:23ANDRES
+*N  NN **************************************************
+*$2020-06-01 15:52:34ANDRES
+*N  NN Nueva funcionalidad de Firmas y Poderes
+*$2020-06-01 15:52:34ANDRES
+ NNNNN 50183   Id Entidad                                        INNNNA000007015200300302021011000000007000700300137000
+/V=C1810.11
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:56:28ANDRES
+ NNNNN 50184   Tipo Entidad                                      INNNNK000007015200300302021011000000007000700300137000
+/V=2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:52:34ANDRES
+ NNNNN 50185   Tipo Poder                                        INNNNK000007015200300302021011000000007000700300137000
+/V=4
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:52:34ANDRES
+ NNNNN 00274   Razón Social                                      INNNNK000007015200300302021011000000007000700300137000
+/V=FIR
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:52:34ANDRES
+ NNNNN 00003   Moneda                                            INNNNF000007015200300302021011000000007000700300137000
+/V=C3.11
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:56:32ANDRES
+ NNNNN 00029   Importe                                           INNNNF000007015200300302021011000000007000700300137000
+/V=C68.8
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:56:55ANDRES
+CNNNNN MN44014701240169024111100
+/P=I30
+/M=Valida Poderes con Montos
+/R=PODERXMONTO,C50183,C50184,C50185,C3,C29,C274
+/T=FIRMAS
+*$2020-06-01 15:52:34ANDRES
+CNNNNN ME00000000000000000000100
+/?=F(LEN, C3194)=0
+/M=No se validó la firma.
+*$2020-06-01 15:52:34ANDRES
+CNNNNN ME00000000000000000000100
+/F=!I30
+/M=Debe validar Firmas
+*$2020-06-01 15:52:34ANDRES
+TN  NN 0003TDébito a la Cuenta Vista                O00211 00
+/?=I97
+*$2020-06-01 16:00:06ANDRES
+ NSSNS 00001   Sucursal                                          INNNNA000054019900770295021011000000054007300770161000
+/V=C0001.12
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06020   Nombre                                            INNNN 000054032000770625001011000000097026001170505000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NSSNS 00007   Producto                                          INNNNA000083019901060295021010000000083007301060193000
+/V=C0007.12
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06251   Descripción                                       INNNN 000084032001070625001011000000128026001480505000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NSSNS 00003   Moneda                                            INNNNA000112019901350295021011000000112007301350193000
+/V=C0003.12
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06400   Descripción                                       INNNN 000112032001350478001011000000155026001750400000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 06401   Sðmbolo Moneda                                    INNSN 000007018600310251000011000000007000700310160000
+ NNNNN 00004   Rubro Operativo                                   INNNNA000212050102320599020010000000212036802320494000
+/V=C6271
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NSSNS 00005   Cuenta                                            INNNNA000141019901640295021011500000141007301640193000
+/V=C0005.12
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00006   Operación                                         INNNNK000096041701160501020011000000096025201160378000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00008   Ordinal                                           INNNNK000007014700270168020010000000007000700270133000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NNNNN 00002   Cliente                                           INNSNA000007013300270238000011000000007000700270119000
+/V=C1803
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NSSNS 01002   Nomb.Reducido                                     INNNN 000040026600600484001011000000071007500910185000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0011700SNN000000000Arial                                   
+ NSSNS 01000   Nombre                                            INNNN 000040026600600484001011000000071007500910185000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0011700SNN000000000Arial                                   
+ NNNNN 01601   Capital Origin                                    INNSN 000007013600270376000011000000007000700270112000
+/f=0013700NNN000000000Arial                                   
+ NNNNN 00024   Débito/Crédito                                    INNNNK000007015700270164000010000000007000700270133000
+/V=D
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NNNNN 00023   Caja/Diario                                       INNNNK000007015700270164000010000000007000700270133000
+/V=C
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NNNNN 00022   Sector (Dpto)                                     INNNN 000007014300270157020010000000007001000270136000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00025   Fecha Valor                                       INNNNA000138014701580217000010000000138001401580140000
+/V=C9500
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 02950   Serie                                             INNNNA000238020602610310001011500000238005302580173000
+/V=C1098.12
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00039   Nro. Cheque                                       INNSNF000271020602940310021011500000271005302940173000
+/V=C1090.12
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 00027   Referencia                                        INNSNF000271020602940310021011000000271005302940173000
+/V=C2950+C0039
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+CNNNNN ME00000000000000000000100
+/F=(C0039=0)
+/M=Error - Dato ingresado con valor = 0
+ NNNNN 00029   Importe                                           INNNNA000307020603300351021011500000307005303300173000
+/V=C0068.8
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN ME00000000000000000000100
+/F=(C29=0)
+/M=Error - Dato ingresado con valor = 0
+ NSSNS 00028   Concepto                                          INNNNF000125011101450335001011000000125003201450107000
+/V="Pago Cheque No.: " + C0039.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00850                                                     INNSNK000007018600310381000011000000007000700310160000
+/V=topform.bmp
+/f=0013700NNN000000128Arial                                   
+ NNNNN 33052   Tipo de Dirección                                 INNSNA000182020502050331021011000000209006002320164000
+/V=C33052.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:28:02LURRUTTY
+ NNNNN 33060   Calle                                             INNSNA000182020502050331021011000000209006002320164000
+/V=C33060.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:28:16LURRUTTY
+ NNNNN 33061   Nro. Puerta                                       INNSNA000182020502050331021011000000209006002320164000
+/V=C33061.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:28:32LURRUTTY
+ NNNNN 33063   Apto/Dpto                                         INNSNA000182020502050331021011000000209006002320164000
+/V=C33063.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:28:47LURRUTTY
+ NNNNN 33062   Piso                                              INNSNA000182020502050331021011000000209006002320164000
+/V=C33062.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:29:02LURRUTTY
+ NNNNN 33074   Teléfono                                          INNSNA000182020502050331021011000000209006002320164000
+/V=C33074.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 11:29:18LURRUTTY
+ NNNNN 01803   Nro. Cliente                                      INNSN 000182020502050331021011000000209006002320164000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN Inicio GAP03 - Identificación por Código Movimiento
+*$2020-05-08 15:31:15FMK
+ NNNNN 00041   Cod Transaccion                                   INNSNK000007015200300202021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 15:31:15FMK
+ NNNNN 09503   Codigo de Oper.                                   INNSN 000007015200300202001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 15:31:15FMK
+ NNNNN 00437   Codigo Interno Mov.                               INNSNK000007015200300302021011000000007000700300137000
+/V=2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-02 16:16:12FMK
+CNNNNN  S00000000000000000000100
+/R=jts:service:trCodeFinder=CodigoTransaccion,trcodefind,C9503 I, C0437 I, C0041 O
+*$2020-05-08 15:31:15FMK
+ NNNNN 00041   Cod Transaccion                                   INNSN 000007015200300202021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 15:31:15FMK
+*N  NN Fin GAP03 - Identificación por Código Movimiento
+*$2020-05-08 15:31:15FMK
+TN  NN 1006TConsulta Genérica                       C00001 00
+/?=C67.3>0
+*$2020-05-22 09:39:05JBENTAN
+ NNNNN 04161   Numero 01                                         ICNSNA040040049200600573121011500000084000901040128000
+/V=C4161.8
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00537   Alfa de 3                                         ICNSNA040040058000600642121011500000084000901040128000
+/V=C537.8
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 04905   Cod Banco BC                                      ICNSNA040040000600600042121011500000087011101070230000
+/V=C5501.8
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0011700NNN000000000Arial                                   
+ NNNNN 04906   Sucursal                                          ICNSNA040040044300600487121011500000084049001040609000
+/V=C6021.11
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0011700NNN000000000Arial                                   
+ NSSNS 04907   Nombre del Bco.                                   ICNSN 040040004900600249101011000000007000700270126000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0011700NNN000000000Arial                                   
+ NSSNS 04908   Nombre Sucursal                                   ICNSN 040040026200600432101011500000000000000000000000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 00068   Importe                                           ICNSNF040040065000600777121011500000083068901030808000
+/V=C0068.8
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0011700NNN000000000Arial                                   
+ NSSNS 00003   Moneda                                            INNNNA000102019901250295021011000000102007301250161000
+/V=C0003.11
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00075   Fecha                                             INNSNA000092017001150308121010000000092003701150127000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00025   Fecha Valor                                       INNSNA000092017001150308121010000000092003701150127000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ N  NN 00002   Cliente                                           INNSNA000007015200300302021011000000007000700300137000
+/V=C1803.13
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01002   Nomb.Reducido                                     INNSN 000007015200300452001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01000   Nombre Cliente                                    INNSN 000007015200300452001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00049   Cuenta Origen                                     INNSNA000092017001150308121010000000092003701150127000
+/V=C0049.8
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00027   Referencia                                        INNSNA000007015200300302021011000000007000700300137000
+/V=C273.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00387   Codigo Reducido                                   INNSNA000007015200300302021011000000007000700300137000
+/V=C273.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 02619   Días Vencidos                                     INNSNA000007015200300302021011000000007000700300137000
+/V=C2619.8
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 09517   Num Línea Sec.                                    INNNNF000007017100310198020011000000007000700310160000
+/V=C9517+25
+/F=0013400NNN255255255Arial                                   
+/f=0013400NNN255255255Arial                                   
+FNNNNN 7371001    C N   
+TN  NN 1006TControl Iteración Otro Cheque           C00001 00
+/?=C67.3>0
+*$2020-05-22 09:39:27JBENTAN
+ NSSNS 00003   Moneda                                            INNNNA000073011100930208020011000000073003200930093000
+/V=C0003.1
+/f=0013700NNN000000000Arial                                   
+ NSSNN 00351   Cuota ?                                           INNSNA000007016800310428000011000000007000700310142000
+/V=C351.8
+CNNNNN ME00000000000000000000100
+/F=(C351>C67.3)
+/P=I24
+/M=Ha superado el Importe Total !!!
+CNNNNN   00000000000000000000100
+/F=(C351#C67.3)
+/P=I23
+/A=I24
+CNSSNN  I00000000000000000000100
+/?=I23
+/R=8
+TN  NN 1006TConsulta Control Totales                C00000 00
+CNNNNN ME00000000000000000000100
+/?=C352.8=C65.3YC351.8#C67.3
+/M=Cantidad de Cheques Diferente al Total
+TN  NN 0004TCrédito Cuenta Vista                    O00211 00
+VNSSNS 820179000202800795SSSD000000000000000000000000000000000000000
+/T=Crédito a la Cuenta Corriente o Caja de Ahorros
+/C=192192192
+KNSSNS 820005002201280752000101
+/T=Datos de la Cuenta
+/F=0013700NNN000000000Arial                                   
+ NSSNS 00001   Sucursal                                          IDNNNA820023020600460302021011500000023007700460191000
+/V=C0001.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06020   Nombre                                            ICNNN 820023033300460638001011500000008026500280391000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NSSNS 00007   Producto                                          IDNNNA820048020600710302021010500000048007700710191000
+/V=C0007.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06251   Descripcion                                       ICNNN 820048033300710638001011500000034026500540391000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NSSNS 00003   Moneda                                            IDNNNA820073020600960302021011500000073007700960191000
+/V=C0003.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06400   Descripcion                                       ICNNN 820073033300960491001011500000060026500800391000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 00004   Rubro Operativo                                   INNNNA000212050102320599020010000000212036802320494000
+/V=C6271
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NSSNS 00005   Cuenta                                            IDNNNA820098020601210302021011500000098007701210191000
+/V=C0005.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00006   Operación                                         INNNNK000096041701160501020011000000096025201160378000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00008   Ordinal                                           INNNNK000007014700270168020010000000007000700270133000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NNNNN 00002   Cliente                                           INNSNA000007013300270238000011000000007000700270119000
+/V=C0902.1
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NSSNS 01002   Nomb.Reducido                                     INNNN 000040026600600484001011000000071007500910185000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0011700SNN000000000Arial                                   
+ NSSNS 01000   Nombre                                            INNNN 000040026600600484001011000000071007500910185000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0011700SNN000000000Arial                                   
+ NNNNN 01601   Capital Origin                                    INNSN 000007013600270376000011000000007000700270112000
+/f=0013700NNN000000000Arial                                   
+ NNNNN 00024   Débito/Crédito                                    INNNNK000007015700270164000010000000007000700270133000
+/V=C
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NNNNN 00023   Caja/Diario                                       INNNNK000000000000200007000010000000000000000200126000
+/V=C
+/F=0012400NNN000000000Arial                                   
+/f=0012400NNN000000000Arial                                   
+ NNNNN 00022   Sector (Dpto)                                     INNNN 000007014300270157020010000000007001000270136000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00025   Fecha Valor                                       INNNNA000138014701580217000010000000138001401580140000
+/V=C9500
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00027   Referencia                                        INNSNA000007015200300302021011000000007000700300137000
+/V=C273.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00041   Cod Transaccion                                   INNSNK000007015200300202021011000000007000700300137000
+/V=10
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+KNSSNS 820128002202110752000101
+/T=Importes
+/F=0013700NNN000000000Arial                                   
+ NSSNS 01740   Saldo Actual                                      INNNN 000011019600340336021010000000011002700340115000
+/?=1=0YC1694='V'
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 06401   Sðmbolo Moneda                                    ICNSN 820146020001700248001011500000007000700310160000
+/C=255255255
+/F=0015700NNN000000000Arial                                   
+ NNNNN 00029   Imp. Depósito                                     IDNNNF820147025301700393021011500000148004201710157000
+/V=C0351.8+C37.3
+/C=255255255
+/F=0015700NNN000000000Arial                                   
+/c=000000255
+/f=0015700NNN255255255Arial                                   
+*$2020-05-22 09:40:06JBENTAN
+CNNNNN ME00000000000000000000100
+/F=(C29=0)
+/M=Error - Dato ingresado con valor = 0
+ NSSNS 00030   Equivalente M/L                                   INNNN 000041011900610260020011000000041002900610092000
+/f=0013700NNN000000000Arial                                   
+CNNNNN M 00000000000000000000100
+/F=C1694='N'
+/M=El Saldo es de tipo No visualizable
+ NSSNS 01741   Saldo Actual                                      IDNNN 820178021102010351021010500000178004202010130000
+/?=1=0YC1694='V'
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06401   Simbolo Moneda                                    ICNNN 820178013902010179021010500000174003401940146000
+/?=1=0YC1694='V'
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06001   Disp. Cobertura                                   IDNNN 820148056401710704021010500000148041401710541000
+/?=1=0YC1694='V'
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 06002   Disponible                                        IDNNN 820178056402010704021010500000178041402010490000
+/?=1=0YC1694='V'
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00028   Concepto                                          INNNNF000125011101450335001011000000125003201450107000
+/V="Dep en Cuenta " + C0005 
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00850                                                     INNSNK000007018600310381000011000000007000700310160000
+/V=topform.bmp
+/f=0013700NNN000000128Arial                                   
+*N  NN Inicio GAP03 - Identificación por Código Movimiento
+*$2020-05-08 15:31:36FMK
+ NNNNN 00041   Cod Transaccion                                   INNSNK000007015200300202021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 15:31:36FMK
+ NNNNN 09503   Codigo de Oper.                                   INNSN 000007015200300202001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 15:31:36FMK
+ NNNNN 00437   Codigo Interno Mov.                               INNSNK000007015200300302021011000000007000700300137000
+/V=1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-29 16:44:39FMK
+CNNNNN  S00000000000000000000100
+/R=jts:service:trCodeFinder=CodigoTransaccion,trcodefind,C9503 I, C0437 I, C0041 O
+*$2020-05-08 15:31:36FMK
+ NNNNN 00041   Cod Transaccion                                   INNSN 000007015200300202021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 15:31:36FMK
+*N  NN Fin GAP03 - Identificación por Código Movimiento
+*$2020-05-21 15:30:49FMK
+*N  NN Inicio GAP 27 Formulario Ticket
+*$2020-05-21 15:29:34FMK
+ NNNNN 00682   Cantidad UVA                                      INNSNK000007015200300302021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 00683   Cotizacion UVA                                    INNSNK000007015200300302021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 08051   Identificacion                                    INNSNA000007015200300202021011000000007000700300137000
+/V=C9503
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 08052   Nombre                                            INNSN 000007015200300202021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+*N  NN Unidades indexadas C3303=C0003
+*$2020-05-21 15:29:34FMK
+ NNNNN 33800   Código                                            INNNNK000007015200300202021011000000007000700300137000
+/V=18
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 33801   Descripción                                       INNNN 000007015200300202021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 00682   Cantidad UVA                                      INNSNA000007015200300302021011000000007000700300137000
+/?=C33803=C0003.0
+/V=C29.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 00683   Cotizacion UVA                                    INNSNA000007015200300302021011000000007000700300137000
+/?=C33803=C0003.0
+/V=C6440.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 00427   Codigo UVA                                        INNSNA000007015200300202021011000000007000700300137000
+/V=C33803.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+*N  NN Prevencion lavado de activos
+*$2020-05-21 15:29:34FMK
+ NNNNN 00263   Importe                                           INNSNK000007015200300302021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 00198   Nro Parametro Generales                           INNSNK000007015200300302021011000000007000700300137000
+/V=19
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 33800   Código                                            INNNNA000007015200300202021011000000007000700300137000
+/V=C198.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+CNNNNN  R00000000000000000000100
+/R=130
+*$2020-05-21 15:29:34FMK
+ NNNNN 00263   Importe                                           INNSN 000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 00264                                                     INNNNA000007015200300302021011000000007000700300137000
+/V=C263.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 04131   Leyenda                                           INNNNK000007015200300202021011000000007000700300137000
+/?=(C29*C6440)>C263
+/V=1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 17:59:30FMK
+*N  NN Prevencion lavado de activos
+*$2020-05-21 15:29:34FMK
+*N  NN UVA menor
+*$2020-05-21 15:29:34FMK
+ NNNNN 00174   Num.L/C Export                                    INNSNK000007015200300302021011000000007000700300137000
+/?=C427.0=C0003.0
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 00198   Nro Parametro Generales                           INNSNK000007015200300302021011000000007000700300137000
+/?=C427.0=C0003.0
+/V=20
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 33800   Código                                            INNNNA000007015200300202021011000000007000700300137000
+/?=C427.0=C0003.0
+/V=C198.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+CNNNNN  R00000000000000000000100
+/?=C427.0=C0003.0
+/R=130
+*$2020-05-21 15:29:34FMK
+ NNNNN 00174   Num.L/C Export                                    INNSN 000007015200300302021011000000007000700300137000
+/?=C427.0=C0003.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 04131   Leyenda                                           INNNNK000007015200300202021011000000007000700300137000
+/?=C427.0=C0003.0Y(C174=C7)
+/V=2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+ NNNNN 04131   Leyenda                                           INNNNK000007015200300202021011000000007000700300137000
+/?=C427.0=C0003.0Y((C29>C264)Y(C174=C7))
+/V=3
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:29:34FMK
+*N  NN UVA menor
+*$2020-05-21 15:29:34FMK
+*N  NN Inicio GAP-41 FONDO GARANTIA
+*$2020-06-02 15:56:53FMK
+ NSSNN 33178                                                     INNNNA000007015200300302021011000000007000700300137000
+/V=C1810.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-02 15:56:53FMK
+ NNNNN 34068   Fondo Garantía                                    INNSN 000007015200300202001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-02 15:56:53FMK
+*N  NN Fin GAP-41 FONDO GARANTIA
+*$2020-06-02 15:56:53FMK
+FNNNNN 7474001      N   
+/?=C34068.0='S'
+*$2020-06-02 15:55:19FMK
+FNNNNN 7475001      N   
+/?=C34068.0='N'
+*$2020-06-02 15:55:19FMK
+*N  NN Fin GAP 27 Formulario Ticket
+*$2020-05-21 15:29:34FMK
+*N  NN ******************************************************************************************************************************************************
+*N  NN Formulario de depósito en efectivo
+FNSSNN 7152001      N   
+/?=(C037.3>0)Y(C067.3=0)
+*N  NN Formulario de depósito de cheque
+FNSSNN 7157001      N   
+/?=(C067.3>0)Y(C037.3=0)
+*N  NN Formulario de depósito de cheque y efectivo
+FNSSNN 7530001      N   
+/?=(C067.3>0)Y(C037.3>0)
+*N  NN ******************************************************************************************************************************************************
+TN  NN 1009TModificación Tabla Cheques              M01651 00
+/?=(I98)
+*N  NN ******************************************************************************************************************************************************
+*N  NN *** Como el Cheque es Certificado, tengo que marcarlo como Pagado.-
+*N  NN ******************************************************************************************************************************************************
+ NNNNN 01086   Cuenta                                            INNSNA000040015000600245001011000000040002300600142000
+/V=C0005.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 01085   Moneda                                            INNSNA000065015000850210001011000000065002300850097000
+/V=C0003.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 01088   Operacion Cheq                                    INNSNK000105015001250210000011000000110002301300142000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 01089   Ordinal Cheque                                    INNSNK000130015001500210000011000000135002301550142000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 01087   Producto                                          INNSNA000065047600850536001011000000065034800850467000
+/V=C0007.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 01084   Sucursal                                          INNSNA000040047600600536001011000000040034800600467000
+/V=C0001.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 01098   Serie                                             INNSNA000007015000270210000011000000007000700270126000
+/V=C1098.3
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 01090   Numero Cheque                                     INNSNA000220016702400262000011000000215004002350159000
+/V=C1090.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 01091   Importe                                           INNSNA000250016702700262000011000000250004002700159000
+/V=C1091.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 01093   Estado Cheque                                     INNSNK000235043002550525000011000000235030502550424000
+/V=P
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NNNNN 01092   Fecha Estado                                      INNSNA000365016703850262000011000000365004003850159000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0013700NNN000000000Arial                                   
+ NSSNS 00028   Concepto                                          INNNNF000405013504250492001011000000405002704250147000
+/V="Ch.Certificado No. "+C39
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1006TConcepto                                C00000 00
+ NSSNS 00028   Concepto                                          INNNNF000125011101450335001011000000125003201450107000
+/V="Dep. Efectivo Cta.: " + C0005
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1008TConsulta Sec. Genérica                  S00640 00
+/F=C6403="D"
+*$2020-05-22 09:41:13JBENTAN
+ NNNNN 06400   Descripcion                                       INNSN 000306026903280445001011000000157001801760124000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1006TLavado de Dinero                        C00001 00
+/?=C37.3>0
+*N  NN **************************************************
+*N  NN *** Corresponde LAVADO de DINERO si :
+*N  NN **************************************************
+*N  NN *** 1) Si Mon=USD e Imp.>10.000.-
+*N  NN *** 2) Si Mon<>USD e Imp. Equiv.>10.000 USD.-
+*N  NN *** Por I88 => Lavado de Dinero.-
+*N  NN **************************************************
+*N  NN *** Cargo Moneda USD por si hay que hacer cuentas.
+*N  NN *** y eventualmente, tomo el Tipo Cambio Compra.-
+ NNNNN 00003   Moneda                                            INNSNA000007015000270210000011000000007000700270126000
+/V=C6399.20
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 06425   T.Cambio Compra                                   INNSN 000007015000270210000011000000007000700270126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN *** Cargo Importe en USD mínimo p/controlar Lavado
+*N  NN *** Eso lo obtengo de la Tabla de Parámetros 
+*N  NN *** CRE_Parámetros desde el Código 778 (Lavado)
+ NNNNN 04620   Código param.                                     INNSNK000007015000270210000011000000007000700270126000
+/V=778
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 04621   Descripcion                                       INNSN 000007015000270210000011000000007000700270126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 04623   Importe                                           INNSN 000007015000270210000011000000007000700270126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN **************************************************
+*N  NN *** Voy por 1)
+CNNNNN   00000000000000000000100
+/?=(C6403.1='D')Y(C29.17>C4623.0)
+/P=I88
+/M=1)
+*N  NN *** Voy por 2)
+CNNNNN   00000000000000000000100
+/?=(C6403.1#'D')Y((C30.17/C6425.000)>C4623.0)
+/P=I88
+/M=2)
+*N  NN **************************************************
+*N  NN *** Campos que tomará la Operación 7777.-
+*N  NN **************************************************
+ NSSNS 00603   Fecha del Día                                     INNNNA000045017900680249001011000000045006000680164000
+/?=(I88)
+/V=C9500.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00612   No. Asiento                                       INNNNA000045017900680249001011000000045006000680164000
+/?=(I88)
+/V=C9501.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00616   Sucursal                                          INNNNA000045017900680249001011000000045006000680164000
+/?=(I88)
+/V=C9502.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00631   No. Caja                                          INNNNA000045017900680249001011000000045006000680164000
+/?=(I88)
+/V=C0053.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00664   Moneda                                            INNNNA000045017900680249001011000000045006000680164000
+/?=(I88)
+/V=C0003.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00685   Importe                                           INNNNA000045048300680659001011000000045036400680468000
+/?=(I88)
+/V=C0029.17
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00686   Equivalente                                       INNNNA000045048300680659001011000000045036400680468000
+/?=(I88)Y(C6403.1='D')
+/V=C0029.17
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00686   Equivalente                                       INNNNF000045048300680659001011000000045036400680468000
+/?=(I88)Y(C6403.1#'D')
+/V=(C0030.17/C6425.0)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00759   Cod. Operación                                    INNNNA000045048300680659001011000000045036400680468000
+/?=(I88)
+/V=C9503.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00804   Usuario                                           INNNNA000045017900680249001011000000045006000680164000
+/?=(I88)
+/V=C9505.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN *** Cliente y Cuenta los paso como Constante CERO
+*N  NN *** porque son transacciones de Caja.-
+ NSSNS 00618   Cuenta                                            INNNNA000045017900680249001011000000045006000680164000
+/?=(I88)
+/V=C0005.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00665   Nro. Cliente                                      INNNNA000045017900680249001011000000045006000680164000
+/?=(I88)
+/V=C0902.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN **************************************************
+DN  NN 7777ON00
+/?=(I88)
+*N  NN **************************************************
+TN  NN 1006TConsulta Genérica                       C00001 00
+/?=A(C5332.1="S")
+*$2020-05-22 09:41:31JBENTAN
+VNNNNN 510138000303200796SSSD000000000000000000000000000000000000000
+/T=Datos-Fondos de Terceros
+/C=192192192
+KNNNNN 510007000702320764000101
+/T=Datos
+/F=0013700NNN000000000Arial                                   
+KNNNNN 510054006400740338000100
+/T=Depósito es por cuenta de Terceros ??
+/F=0013700NNN000000000Arial                                   
+*$2020-05-22 09:41:43JBENTAN
+ NNNNN 00964   Opcion (S/N)                                      I NSN 510107020901300276001011110000107006401300194000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN   00000000000000000000100
+/?=C964='S'
+/P=I70
+ NNNNN 00025   Fecha Valor                                       INNNNA000000013300200243000011000000000000000200119000
+/V=C9500
+/F=0008400NNN000000000Arial                                   
+/f=0008400NNN000000000Arial                                   
+ NSSNS 00028   Concepto                                          INNNNA000125011101450335001011000000125003201450107000
+/V=C0028.17
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1001TAlta Cumplimiento                       A03071 00
+/?=I70
+VNNNNN 500138000303200796SSSD000000000000000000000000000000000000000
+/T=Datos Cumplimiento
+/?=I70
+/C=192192192
+KNNNNN 500007000702320764000101
+/?=I70
+/T=Datos
+/F=0013700NNN000000000Arial                                   
+ NSSNN 06990   Sucursal                                          INNSNA000007015200300202021011000000007000700300137000
+/?=I70
+/V=C9502
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNN 06991   Asiento                                           INNSNA000007015200300202021011000000007000700300137000
+/?=I70
+/V=C9501
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNN 06992   Fecha Proceso                                     INNSNA000007015200300202021011000000007000700300137000
+/?=I70
+/V=C9500
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNN 06993   JTS OID                                           INNSNA000007015200300202021011000000007000700300137000
+/?=I70
+/V=C1810.17
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNN 06995   Comentarios                                       I NSN 500030016902130731000011000000030002400530154000
+/?=I70
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00028   Concepto                                          INNNNA000125011101450335001011000000125003201450107000
+/V=C0028.17
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*#I24# c
+*#I25#moneda local
+*#I200#Buscar por cliente
+*#I161#Cliente pertenece a paquete
+*#I30#Transaccion mayor a U$S 10000
+*#I201#Buscar por cuenta
+*#I300#ES PF
+*#I102#Existe documento y es PJ
+*#I101#Existe documento y es PF
+*#I100#Existe lectura PUCA AFIP
+*#I23#a

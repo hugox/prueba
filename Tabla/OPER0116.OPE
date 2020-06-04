@@ -1,0 +1,3786 @@
+VERSION:055_5
+TN  NN 1006T1.Consulta Persona Física               C00141 00
+*N  NN ***
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:25:09ESOTELO
+ NSSNN 33950   Ordinal                                           INNSNK000007015200300302021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:26:45ESOTELO
+ NNNNN 339531  Ordinal                                           INNSNK000007015200300302021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:38:48ESOTELO
+ NNNNN 33993   Ordinal                                           INNSNK000007015200300302021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:42:36ESOTELO
+ NNNNN 34006   Ordinal                                           INNSNK000007015200300302021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:48:27ESOTELO
+ NNNNN 34010   Ordinal                                           INNSNK000007015200300302021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:52:01ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:25:09ESOTELO
+ NNNNN 03251   Nro. persona                                      INNSNL000056015600760516001011000000056001700760136000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 03842   Tipo Documento                                    INNSNL000056015600760516001011000000056001700760136000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01963   Nro Doc                                           INNSNL000056015600760516001011000000056001700760136000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 12:54:55AORTIZ
+ NNNNN 01064   Tipo Documento                                    INNSNL000056015600760516001011000000056001700760136000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 12:55:06AORTIZ
+ NNNNN 01401   Numero Persona                                    INNSNA000056015600760516001011000000056001700760136000
+/V=C3251.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSN 010056015600760516001011000000056001700760136000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 33116   PAIS_RESID_FISCAL                                 INNSN 000056015600760516001011000000056001700760136000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 12:40:33AORTIZ
+ NNNNN 01935   Código de País                                    INNSNF000056015600760516001011000000056001700760136000
+/V=C33116.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 12:40:51AORTIZ
+ NNNNN 01936   Nombre                                            INNSN 000056015600760516001011000000056001700760136000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 12:41:02AORTIZ
+*N  NN //Tomo el valor del estado civil
+ NNNNN 00556   Alfa de 1                                         INNSNA000225014903030339001011000000225002802480126000
+/V=C1403
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN //Tomo el valor de si es Unipersonal o no
+ NNNNN 01448   Unipersonal                                       INNSN 010056015600760516001011000000056001700760136000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN ME00000000000000000000100
+/F=C1448#'S'YC1448#'N'
+/M=Persona Física sin definir si es Unipersonal o no
+ NNNNN 00834   Tipo de Persona                                   INNSNK010056015600760516001011000000056001700760136000
+/?=C1448='S'
+/V=U
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00834   Tipo de Persona                                   INNSNK010056015600760516001011000000056001700760136000
+/?=C1448='N'
+/V=F
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN //Prendo indicador cuando tiene cónyuge
+CNNNNN   00000000000000000000100
+/?=C556='C'OC556='U'
+/P=I30
+*$2020-02-26 11:38:02PABLOP
+CNNNNN ME00000000000000000000100
+/F=C9509=0
+/M=Persona Física Inexistente
+*N  NN ===============
+*N  NN Leo Moneda UI para obtener tipo de cambio - Ventas Anuales
+ NNNNN 06400   Descripcion                                       INNSN 000007015200270202000011000100007000700270137000
+/?=1=0
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-26 11:38:27PABLOP
+*N  NN INICIO GAP 8 CLIENTES: Para PF se debe agregar dire Real y Act. Económica
+*$2020-02-27 17:36:01ANDRES
+ NNNNN 33800   Código                                            INNNNK000007015200300302021011000000007000700300137000
+/V=1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-27 17:36:01ANDRES
+ NNNNN 33803   Numérico                                          INNNN 000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-27 17:36:01ANDRES
+*N  NN FIN GAP 8 CLIENTES: Para PF se debe agregar dire Real y Act. Económica
+*$2020-02-27 17:36:01ANDRES
+*N  NN * INICIO NBCH-DEF-139 Y NBCH-DEF-145
+*$2020-04-21 10:10:55LUISE
+CNNNNN   00000000000000000000100
+/F=A(C1441="3")
+/P=I150
+*$2020-04-21 10:11:45LUISE
+*N  NN * FIN NBCH-DEF-139 Y NBCH-DEF-145
+*$2020-04-21 10:10:58LUISE
+TN  NN 1006TConsulta para la Modif.Persona Fisica   C00001 00
+VNNNNN 320002000204000800NNND000000000000000000000000000000000000010
+/T="Grupos de "+C1421+"  "+C1418.1
+/C=192192192
+KNNNNN 320016001903060771000101
+/F=0012700NNN000000000Arial                                   
+KNNNNN 320048003000670759010100
+/T=GRUPO  A  MODIFICAR :
+/F=0012700NNN000000000Arial                                   
+ NNNNN 00844   Datos a Modific                                   I NSN 320095020602710632001011300000037002800600142000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN   00000000000000000000100
+/?=C844=1
+/P=I60
+CNNNNN   00000000000000000000100
+/?=C844=2
+/P=I61
+CNNNNN   00000000000000000000100
+/?=C844=3
+/P=I62
+CNNNNN   00000000000000000000100
+/?=C844=4
+/P=I63
+CNNNNN   00000000000000000000100
+/?=C844=5
+/P=I64
+CNNNNN   00000000000000000000100
+/?=C844=6
+/P=I65
+CNNNNN   00000000000000000000100
+/?=C844=7
+/P=I66
+CNNNNN ME00000000000000000000100
+/?=C844=8
+/M=Opción no válida para Persona Física
+TN  NN 1009TModificación Persona Física             M00341 00
+/?=I60
+VNNNNN 020002000204440800NNND000000000000000000000000000000000000000
+/T=1  -  Identificación
+/C=192192192
+*$2020-02-26 10:52:52PABLOP
+KNNNNN 020016001903180770000101
+/F=0012700NNN000000000Arial                                   
+*$2020-03-03 09:39:23AORTIZ
+CNNNNN  w00000000000000000000100
+/R=F
+ NNNNN 01854   Nro Persona                                       INNSNA020044016400670344001011000000044004200670146000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01855   Tipo Doc Identificativo                           IINSNA020111019201340372001010500000111004301340187000
+/V=C3842.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-02 15:48:04AORTIZ
+ NNNNN 01861   Tipo Persona                                      IINSN 020043019300660373001010500000043004200660146000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-02 15:48:08AORTIZ
+ NNNNN 33803   Numérico                                          INNSNA020077028501000508021010000000080004201030146000
+/V=C33803.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-02 15:57:49AORTIZ
+ NNNNN 33802   Pais Doc. Identificativo                          ICNSNA020077028501000508021010500000080004201030146000
+/V=C33802.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-02 15:48:11AORTIZ
+ NNNNN 01857   País Doc Identificativo                           IINSN 020077019301000273021010500000077004301000186000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-02 15:48:14AORTIZ
+ NNNNN 01856   Nro. Doc Identificativo                           IINSN 020111055501340735021010500000111040501340553000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:43:51AORTIZ
+ NNNNN 04949   País Doc Origen                                   IISSNA020145019201680253021010500000145004301680147000
+/V=C33321
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-06 16:58:10FMK
+ NNNNN 01936   Nombre                                            ICSSN 020145028501680508001210503000007000700270126000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-02 15:47:00AORTIZ
+ NNNNN 33321   Pais Doc Origen                                   INNSNA020145019301680263021011000000150004301730186000
+/V=C4949
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-02 14:51:32AORTIZ
+ NNNNN 33320   Tipo Doc Físico                                   IINSNA020179019202020372001011500000179004302020187000
+/V=C33320
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-06 16:58:31FMK
+ NNNNN 33323   Nro Doc Físico                                    IISSNA020179055502020735021010500000179040502020509000
+/V=C33322
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:42:46AORTIZ
+CNNNNN ME00000000000000000000100
+/?=A(C33320="DNI")
+/F=F(LEN,C33323)#8
+/M=Error - El largo del DNI debe ser de 8
+*$2020-03-02 16:43:46AORTIZ
+CNNNNN ME00000000000000000000100
+/?=A(C33320="DNI")Y(F(MID, C1856, 3, 8)#C33323)
+/M=Error - El DNI no coincide con el CUIL!
+*$2020-05-21 11:41:13PABLOP
+ NNNNN 33322   Num Doc Fisico                                    INSSNA020179055502020735001010000000179040502020509000
+/V=C33323
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-02 15:40:47AORTIZ
+ NSSNS 33324   Nro de Trámite                                    IINSNA020213055502360671021010500000213040502360507000
+/?=A(C33320="DNI")
+/V=C33324
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:42:15AORTIZ
+ NSSNS 33325   Ejemplar                                          IINSNA020247055502700671001010500000247040502700480000
+/?=A(C33320="DNI")
+/V=C33325
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-09 15:32:49AORTIZ
+ NNNNN 01859   Fecha de Vcmto.                                   I SSNA020247019202700292011010000000247003702700141000
+/V=C1859
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 15:42:58AORTIZ
+ NSSNS 00127   Fecha                                             INSSN 000148049401710594000011000000148037501710479000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN M 00000000000000000000100
+/?=C1859#C127YC1859<C9500
+/M=Atención - Documento NO vigente. ¿Desea continuar?
+*$2020-04-24 16:57:23JBENTAN
+ NNNNN 00964   Opcion (S/N)                                      INNSNA020225016402480344001011120000225004202480146000
+/V=C1860
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01860   Org. Control?                                     INNSN 020225016403150344001011120000225004202480146000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-02 14:49:59AORTIZ
+CNNNNN   00000000000000000000100
+/F=C964#C1860YC1860='S'
+/P=I41
+CNNNNN   00000000000000000000100
+/F=C964#C1860YC1860='N'
+/P=I42
+TN  NN 1001TAlta bitacora documentos                A33331 00
+/?=I60
+*$2020-05-08 12:39:28ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:39:20ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:39:20ESOTELO
+DN  NN 1023SS
+*$2020-05-08 12:39:20ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:39:20ESOTELO
+TN  NN 1008TConsulta Doc PF-PJ                      S00340 00
+/?=I60Y(I41OI42)
+/F=C1855<>C1855.3
+*N  NN //Consulta para saber si tiene otro doc.
+ NNNNN 01854   Nro Persona                                       INNNNA000075049400980678000211003000075037500980479000
+/V=C1854.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01860   Org. Control?                                     INNNN 000075049400980678000211003000075037500980479000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN   00000000000000000000100
+/F=C9509#0
+/P=I43
+CNNNNN ME00000000000000000000100
+/?=I42
+/F=C9509=0
+/M=Error - único documento de la persona
+TN  NN 1008TConsulta Doc PF-PJ                      S00340 00
+/?=I60YI43
+/F=C1855<>C1855.3 and C1860="S"
+*N  NN //Consulta para saber si tiene otro doc. q reporta
+ NNNNN 01854   Nro Persona                                       INNNNA000075049400980678000211003000075037500980479000
+/V=C1854.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01860   Org. Control?                                     INNNN 000075049400980678000211003000075037500980479000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN   00000000000000000000100
+/F=C9509#0
+/P=I44
+CNNNNN   00000000000000000000100
+/?=I42
+/F=C9509=0
+/P=I45
+*N  NN //Si viene x el I41 y se prende el I44, pasa a selecc. el doc. q no reporta
+*N  NN //Si viene x el I42 y se prende el I44, modifica el doc 
+TN  NN 1006TConsulta Doc PF-PJ                      C00340 00
+/?=I60YI41YI44
+VNNNNN 110067000203770796SSSD000000000000000000000000000000000000000
+/T=Modificación de Documentos PFísica - PJurídica
+/C=192192192
+KNNNNN 110011001902990765000101
+/T=Modificación
+/F=0013700NNN000000000Arial                                   
+KNNNNN 110045003500680332000000
+/T=Para que el documento reporte al Organismo de
+/F=0012700NNN000000000Arial                                   
+KNNNNN 110045031000680594000000
+/T=Control, debe elegir el documento que dejará de
+/F=0012700NNN000000000Arial                                   
+KNNNNN 110045058500680734000000
+/T=reportar al Organismo
+/F=0012700NNN000000000Arial                                   
+ NSSNS 08010   Filtro ayuda                                      INNSNF110075007002560658001011000000109006401290220000
+/V="NUMEROPERSONAFJ="+C1854.3+" AND REPORTAAORGANISMOCONTROL='S'"
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00408   Ayuda Docs PFPJ                                   IESSN 110099007002560658001011600000109006401290220000
+/L=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01854   Nro Persona                                       INNSNA110079013002520643001011000000109006401290220000
+/V=C408.7
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01855   Tipo Documento                                    INNSNA110079013002520643001011000000109006401290220000
+/V=C1855
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01861   Tipo Persona                                      INNSN 000007015000270210000011000000007000700270126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNSSNS ME00000000000000000000100
+/F=C9509=0
+/M=Opción Invalida - Registro Inexistente
+TN  NN 1009TModificación de Documentos PF - PJ      M00341 00
+/?=I60YI41YI44
+ NSSNS 01854   Nro Persona                                       INNSNA000079013002520643001011000000109006401290220000
+/V=C1854.7
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01855   Tipo Documento                                    INNSNA000079013002520643001011000000109006401290220000
+/V=C1855.7
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01860   Org. Control?                                     INNSNK010079013002520643001011000000109006401290220000
+/V=N
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1001TAlta bitacora documentos                A33331 00
+/?=I60YI41YI44
+*$2020-05-08 12:40:07ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:39:53ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:39:53ESOTELO
+DN  NN 1023SS
+*$2020-05-08 12:39:53ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:39:53ESOTELO
+TN  NN 1006TConsulta Doc PF-PJ                      C00340 00
+/?=I60YI45
+VNNNNN 120067000203770796SSSD000000000000000000000000000000000000000
+/T=Modificación de Documentos PFísica - PJurídica
+/C=192192192
+KNNNNN 120011001902990765000101
+/T=Modificación
+/F=0013700NNN000000000Arial                                   
+KNNNNN 120045003500680288000000
+/T=Para que el documento deje de reportar al
+/F=0012700NNN000000000Arial                                   
+KNNNNN 120045027600680592000000
+/T=Organismo de Control, debe elegir el documento que
+/F=0012700NNN000000000Arial                                   
+KNNNNN 120045057500680767000000
+/T=pasará a reportar al Organismo
+/F=0012700NNN000000000Arial                                   
+ NSSNS 08010   Filtro ayuda                                      INNSNF120075007002560658001011000000109006401290220000
+/V="NUMEROPERSONAFJ="+C1854.3+" AND REPORTAAORGANISMOCONTROL='N'"
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 00408   Ayuda Docs PFPJ                                   IESSN 120099007002560658001011600000109006401290220000
+/L=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01854   Nro Persona                                       INNSNA120079013002520643001011000000109006401290220000
+/V=C408.10
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01855   Tipo Documento                                    INNSNA120079013002520643001011000000109006401290220000
+/V=C1855
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01861   Tipo Persona                                      INNSN 000007015000270210000011000000007000700270126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNSSNS ME00000000000000000000100
+/F=C9509=0
+/M=Opción Invalida - Registro Inexistente
+TN  NN 1009TModificación de Documentos PF - PJ      M00341 00
+/?=I60YI45
+ NSSNS 01854   Nro Persona                                       INNSNA000079013002520643001011000000109006401290220000
+/V=C1854.10
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01855   Tipo Documento                                    INNSNA000079013002520643001011000000109006401290220000
+/V=C1855.10
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01860   Org. Control?                                     INNSNK010079013002520643001011000000109006401290220000
+/V=S
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1001TAlta bitacora documentos                A33331 00
+/?=I60YI45
+*$2020-05-08 12:40:38ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:40:21ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:40:21ESOTELO
+DN  NN 1023SS
+*$2020-05-08 12:40:21ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:40:21ESOTELO
+TN  NN 1009TModificación Persona Física             M00141 00
+/?=I60
+ NNNNN 01401   Numero Persona                                    INNSNA020044016400670344001011000000044004200670146000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSN 000121015001410437001011000000121002801410126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN ME00000000000000000000100
+/?=C1401=0
+/M=Error - Dato ingresado con valor = 0
+ NNNNN 01448   Unipersonal                                       INSSN 020225016403020251001011120000225004202480146000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01436   Fecha Act Ident                                   INNSNA020189015002120340001011000000189003202120130000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1001TAlta bitacora personas fisicas          A33301 00
+/?=I60
+*$2020-05-08 15:01:11ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:28:25ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 10:40:10ESOTELO
+DN  NN 1021SS
+*$2020-05-08 12:31:06ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:28:25ESOTELO
+TN  NN 1006TFormulario                              C00001 00
+/?=I60
+ NNNNN 01401   Numero Persona                                    INNSNA020044016400670344001011000000044004200670146000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSN 000121015001410437001011000000121002801410126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01448   Unipersonal                                       INSSN 020225016403020251001011120000225004202480146000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01436   Fecha Act Ident                                   INNSNA020189015002120340001011000000189003202120130000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1009TModificación Persona Física             M00141 00
+/?=I61
+ NNNNN 01401   Numero Persona                                    INNSNA030037015000600330001011000000037002800600142000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSN 000121015001410437001011000000121002801410126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+VNNNNN 030002000204400800NNND000000000000000000000000000000000000000
+/T=2  -  Filiatorios
+/C=192192192
+*$2020-05-12 12:38:31AORTIZ
+KNNNNN 030010001103520772000101
+/F=0012700NNN000000000Arial                                   
+*$2020-06-01 16:03:06PABLOP
+CNNNNN  w00000000000000000000100
+/R=F
+ NNNNN 01418   Apell. Paterno                                    I NSN 030031018000540467001011000000031004300540147000
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN ME00000000000000000000100
+/?=C1418=' '
+/M=Error - Dato ingresado en blanco 
+ NNNNN 01420   Apell. Materno                                    I SSN 030062018000850467000011000000062004300850147000
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN M 00000000000000000000100
+/?=C1420=' '
+/M=AVISO- Dato ingresado en blanco 
+ NNNNN 01421   Primer Nombre                                     I NSN 030093018001160467001011000000093004301160147000
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN ME00000000000000000000100
+/?=C1421=' '
+/M=Error - Dato ingresado en blanco 
+ NNNNN 01422   Segundo Nombre                                    I SSN 030124018001470467001011000000124004301470147000
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01402   Fcha.Nacimiento                                   I NSN 030155018001780280000011000000155004301780147000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN //INICIO
+*N  NN //Campos para el control de la fecha de nacimiento
+CN  NN ME00000000000000000000100
+/F=C1402>C9500
+/M=Error-Fecha de Nacimiento mayor a Fecha de Proceso
+ NNNNN 00025   Fecha Valor                                       INNNNA060016059300360703001011500000016046700360586000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00950   Dia                                               INNSNF060007015000270210000011000000007000700270126000
+/V=C25[1,2]
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00999   Mes                                               INNSNF060055015800750218000011000000055001500750134000
+/V=C25[4,2]
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00804   Año                                               INNSNF060107019301270253000011000000107005101270170000
+/V=C25[7,4]
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00109   Numerico de 4                                     INNSNF060107055701270617001011000000107041401270533000
+/V=F(VAL,C804)-14
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00804   Año                                               INNSNF060107019301270253000011000000107005101270170000
+/V=C109
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00075   Fecha                                             INNSNF060130067601500756000011000000130053301500652000
+/V=C804+C999+C950
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN //FIN
+CNNNNN M 00000000000000000000100
+/?=C1402>C075
+/M=La Persona Física es menor de 14 años
+ NNNNN 00025   Fecha Valor                                       INNNNA060016059300360703001011500000016046700360586000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00950   Dia                                               INNSNF060007015000270210000011000000007000700270126000
+/V=C25[1,2]
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00999   Mes                                               INNSNF060055015800750218000011000000055001500750134000
+/V=C25[4,2]
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00804   Año                                               INNSNF060107019301270253000011000000107005101270170000
+/V=C25[7,4]
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00109   Numerico de 4                                     INNSNF060107055701270617001011000000107041401270533000
+/V=F(VAL,C804)-18
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00804   Año                                               INNSNF060107019301270253000011000000107005101270170000
+/V=C109
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00075   Fecha                                             INNSNF060130067601500756000011000000130053301500652000
+/V=C804+C999+C950
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN //FIN
+CNNNNN M 00000000000000000000100
+/?=C1402>C075
+/M=La Persona Física es menor de 18 años
+ NNNNN 01423   País Nacimiento                                   I NSN 030187018002100250021011000000187004302100147000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-06 17:00:07FMK
+ NNNNN 01936   Nombre                                            ICNSN 030187027802100467001011500000037002700570125000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:01:39PABLOP
+ NNNNN 01424   Nacionalidad                                      I NSNA030217018002400369001011000000217004302400147000
+/V=C1937
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:02:33PABLOP
+CNNNNN ME00000000000000000000100
+/?=C1424=' '
+/M=Error - Dato ingresado en blanco 
+ NNNNN 01404   Sexo                                              I NSN 030247018003320370001011110000247004302700147000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:02:53PABLOP
+ NNNNN 01403   Estado Civil                                      I NSN 030277018004790370001011120000277004303000147000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:03:01PABLOP
+*N  NN * AJUSTE RESIDENCIA
+*$2020-03-20 16:39:42LUISE
+ NNSNN 01441   Cod.Residencia                                    I NSN 030309018004160370001011110000309004303320173000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:03:12PABLOP
+CNNNNN   00000000000000000000100
+/F=C1423=32
+/P=I10
+/M=Nacio Argentina
+*$2020-05-21 16:08:31AORTIZ
+ NNNNN 33000   Cod. Pais                                         INNSNK000062019900850310000011000000062006300850184000
+/?=I10
+/V=32
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:08:31AORTIZ
+ NNNNN 33003   Provincia Nac                                     I NSN 030217049402400539020010000000217038502400489000
+/?=I10
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:11:52PABLOP
+ NSNNN 33001   Provincia                                         INNSNF000244050102670546020010000000244041002670514000
+/?=I10
+/V=C33003.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:08:31AORTIZ
+ NSNNN 33002|  Descripción                                       INNSN 140050027300730669001011000000127034401500465000
+/?=I10
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:08:31AORTIZ
+ NSNNN 33114|  Provincia Nac.                                    ICNSNA030217056602400762001010500000127034401500465000
+/?=I10
+/V=C33002
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:30:26PABLOP
+ NSNNN 33114|  Provincia Nac.                                    I NSN 030217049402400762001010000000217038502400489000
+/?=!I10
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:30:21PABLOP
+ NNNNN 08010   Filtro ayuda                                      INNSNF000007015200300452001011000000007000700300137000
+/?=I10
+/V="CODIGOPAIS=32"+" AND PROVINCIA = '"+C33003+"'"
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:08:31AORTIZ
+ NNNNN 01499   Código de País                                    INNSNK020124019801470309000011000000124006201470183000
+/?=I10
+/V=32
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:08:31AORTIZ
+ NSNNN 00415   Departamento                                      I NSN 030247049402700539020010000000247038502700489000
+/?=I10
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:02:53PABLOP
+ NNNNN 01500   Departamento                                      INNSNF000124019801470309000011000000124006201470183000
+/?=I10
+/V=C415
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:08:31AORTIZ
+ NSNNN 01501|  Nombre Dpto.                                      ICNSN 030247056402700762001010500000127006301500184000
+/?=I10
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:02:53PABLOP
+ NNNNN 08010   Filtro ayuda                                      INNSNF000279041503020511001011000000007000700300137000
+/?=I10
+/V="CODIGOPAIS=32 "+" AND DIM1 = '"+C33003+"' AND DIM2 = '"+C415+"'"
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:08:31AORTIZ
+ NNNNN 33009   Localidades                                       I NSN 030277049403000539020010000000277038503000489000
+/?=I10
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:03:01PABLOP
+ NNNNN 33004   Cod. País                                         INNSNK000062019900850310000011000000062006300850184000
+/?=I10
+/V=32
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:08:31AORTIZ
+ NNNNN 33005   Provincia                                         INNSNF000032063200520690000011000000032049700520605000
+/?=I10
+/V=C33003
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:08:31AORTIZ
+ NNNNN 33006   Departamento                                      INNSNF000032063200520690000011000000032049700520605000
+/?=I10
+/V=C415
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:08:31AORTIZ
+ NNNNN 33007   Localidad                                         INNSNF000175019901950257021011000000177006301970200000
+/?=I10
+/V=C33009
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:08:31AORTIZ
+ NSNNN 33008   Descripción Localidad                             INNSN 140304057103270757001010000000176030201960458000
+/?=I10
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:08:31AORTIZ
+ NSNNN 33115   Localidad Nac.                                    ICNSNF030277056403000762001010500000176030201960458000
+/?=I10
+/V=C33008
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:30:37PABLOP
+ NSNNN 33115   Localidad Nac.                                    I NSN 030277049403000763001010000000277038503000489000
+/?=!I10
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:30:46PABLOP
+*N  NN GAP 19- Interfaces
+*$2020-05-21 16:08:31AORTIZ
+CNNNNN   00000000000000000000100
+/?=C1441=2
+/F=A(C1441="2")
+/P=I12
+/A=I11
+/M=Residente
+*$2020-05-21 16:08:31AORTIZ
+CNNNNN   00000000000000000000100
+/?=C1441.0#2
+/F=A(C1441.0#"2")
+/P=I11
+/M=No Residente
+*$2020-05-21 16:08:31AORTIZ
+ NNSNN 00245   Pais Res Fiscal                                   I NSN 030309049403320542021010000000309038503320489000
+/?=I11Y!I12
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:03:12PABLOP
+ NNSNN 01936   Nombre                                            ICNSNF030309056603330762001010500000276041502990511000
+/?=I11Y!I12
+/V=C1936.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 16:03:12PABLOP
+ NNSNN 33116   Pais Res Fiscal                                   INNSNA000331050103540549001010000000334041003570506000
+/?=I11Y!I12
+/V=C245
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 15:57:39PABLOP
+ NNNNN 33116   Pais Res Fiscal                                   INNSNF030308049903310558001010000000308038203310480000
+/?=A(C1441="2")
+/V=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 14:26:19AORTIZ
+*N  NN * FIN AJUSTE
+*$2020-03-20 16:39:42LUISE
+*N  NN **********************************
+*N  NN //Prendo indicador cuando antes no tenía cónyuge
+*N  NN INICIO GAP 14 20200226
+*$2020-02-26 11:46:06PABLOP
+CNNNNN M 00000000000000000000100
+/?=((C1403='C'OC1403='U')Y(!I30))Y1=0
+/P=I20
+/M=Debe de dar de alta al cónyuge/concubino y su relación
+*$2020-02-26 11:46:12PABLOP
+CNNNNN   00000000000000000000100
+/?=(C1403='C'OC1403='U')Y!I30
+/P=I20
+/M=Debe de dar de alta al cónyuge/concubino y su relación
+*$2020-02-26 11:46:19PABLOP
+CNNNNN M 00000000000000000000100
+/?=(!(C1403='C'OC1403='U')Y(I30))Y1=0
+/P=I21
+/M=Debe dar de baja la relación con el cónyuge
+*$2020-02-26 10:32:00PABLOP
+ NNNNN 01446   Descripción                                       INSSN 030306018003290467001010000000306004303290147000
+/?=(C1403='C'OC1403='U')Y1=0
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:32:42PABLOP
+ NNNNN 01917   Fecha Act Filia                                   INNSNA030298014903210436001011000000298002803210126000
+/?=1=0
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 11:47:15PABLOP
+TN  NN 1001TAlta bitacora personas fisicas          A33301 00
+/?=I61
+*$2020-05-22 16:39:20PABLOP
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-22 16:39:20PABLOP
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:39:20PABLOP
+DN  NN 1021SS
+*$2020-05-22 16:39:20PABLOP
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-22 16:39:20PABLOP
+TN  NN 1009TModificación Persona Física             M00141 00
+/?=I61
+*$2020-05-22 16:36:37PABLOP
+ NNNNN 01401   Número Persona                                    INNSNA000037015000570330001011000000037002800570142000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+ NNNNN 01421   Primer Nombre                                     INNSN 000065015000850437001011000000065002800850126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+VNNNNN 070097000103790801NNND000000000000000000000000000000000000000
+/T=Filiatorios
+/C=192192192
+*$2020-05-28 12:10:24PABLOP
+KNNNNN 070016001903040772000101
+/F=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+CNNNNN  w00000000000000000000100
+/R=F
+*$2020-05-22 16:36:30PABLOP
+ NNNNN 01437   Cod. Profesión                                    INNSN 070080015101000232000011000000080002901000142000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+ NNNNN 01502   Cod. Profesión                                    I NSNA070060016400830219000011000000060004000830144000
+/V=C1437
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+ NNNNN 01503   Descripcion                                       ICNSN 070060026400830538001011500000091002801110141000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+ NNNNN 01437   Cod. Profesión                                    INNSNA070080015101000232000011000000080002901000142000
+/V=C1502
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+ NNNNN 01431   Empl. BCRA/NBC                                    IINSN 070096016401190336001011500000096004001190144000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+ NNNNN 01919   Fecha Act Econ                                    INNSNA070265015002880237001011000000265002802880134000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+*N  NN INICIO GAP 32 20200324
+*$2020-05-22 16:36:30PABLOP
+ NNNNN 33273   Motivo Vinc.                                      IINSN 070134016401570539001010500000133004001560116000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-29 09:59:23PABLOP
+*N  NN INICIO GAP 32 20200324
+*$2020-05-22 16:36:30PABLOP
+*N  NN --- INICIO GAP 4-----
+*$2020-05-22 16:36:30PABLOP
+ NNSNN 33042   Sector                                            I NSNA070168016401910219021011000000168004001910138000
+/V=C33043.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+ NNSNN 33041   Descripción                                       ICNSN 070168026401910538001011500000195004402180142000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+ NNNNN 33039   Sector                                            INNSNA000007015200300202001011000000007000700300137000
+/V=C33042.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+ NSSNN 33041   Descripción                                       INNSN 620262034502850623001011000000195004402180142000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+CNNNNN   00000000000000000000100
+/F=C33043#C33042
+/P=I100
+*$2020-05-22 16:36:30PABLOP
+ NSSNN 33043   Sector                                            INNSNA000195016702180217001011000000195004402180142000
+/V=C33042.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+*N  NN ----------FALTA AGREGAR CONSULTA A PADRON PARA CONDICION TRIBUTARIA-------------------
+*$2020-05-22 16:36:30PABLOP
+CNNNNN   00000000000000000000100
+/F=A(C33040.0="02")
+/P=I200
+/M=Paso a Sector 2 (Público)
+*$2020-05-22 16:36:30PABLOP
+ NNNNN 02789   IVA                                               INNNNK000007015200300202001011000000007000700300137000
+/?=I200
+/V=EP
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+*N  NN INICIO GAP 40 NIF
+*$2020-05-22 16:36:30PABLOP
+*N  NN * INICIO NBCH-DEF-139 Y NBCH-DEF-145
+*$2020-05-22 16:36:30PABLOP
+ NNNNN 33048   NIF                                               I SSN 070204016402270319001010000000204004002270117000
+/?=I150
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:36:30PABLOP
+*N  NN * FIN NBCH-DEF-139 Y NBCH-DEF-145
+*$2020-05-22 16:36:30PABLOP
+*N  NN FIN GAP 40
+*$2020-05-22 16:36:30PABLOP
+TN  NN 1001TAlta bitacora personas fisicas          A33301 00
+/?=I61
+*$2020-05-22 16:39:41PABLOP
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-22 16:38:32PABLOP
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:38:32PABLOP
+DN  NN 1021SS
+*$2020-05-22 16:38:32PABLOP
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-22 16:38:32PABLOP
+TN  NN 1008TConsulta Clientes-Persona               S00161 00
+/?=I61YI100
+/F=C1506="T"
+*$2020-05-22 16:41:25PABLOP
+ NNNNN 01505   Número Persona                                    INNSNA000037015000570330001011000000037002800570142000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:38:32PABLOP
+CNNNNN   00000000000000000000100
+/?=C9509=1
+/P=I110
+*$2020-05-22 16:38:32PABLOP
+CNNNNN   00000000000000000000100
+/?=C9509=0
+/A=I110
+*$2020-05-22 16:38:32PABLOP
+TN  NN 1009TModificacion Cliente (Sector)           M00001 00
+/?=I61YI100YI110
+*$2020-05-22 16:41:31PABLOP
+ NNNNN 00902   Codigo Cliente                                    INNSNA000007015200300302021011000000007000700300137000
+/V=C1504.20
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:39:59PABLOP
+ NNNNN 01031   Sub-Division 1                                    INNSNA000007015200300202001011000000007000700300137000
+/V=C33040.18
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-22 16:41:16PABLOP
+TN  NN 1006TConsulta Generica                       C00000 00
+/?=I110
+*$2020-05-22 16:38:32PABLOP
+CNNNNN  I00000000000000000000100
+/R=20
+*$2020-05-22 16:40:16PABLOP
+*N  NN ---FIN GAP 4-----
+*$2020-05-22 16:38:32PABLOP
+TN  NN 1006TConsulta Alta Persona Física (Cónyuge)  C00141 00
+/?=I20YI61
+*$2020-02-21 12:07:33PABLOP
+CNNNNN   00000000000000000000100
+/A=I30I42I43I32I40I52
+*$2020-02-21 12:08:21PABLOP
+ NNNNN 00834   Tipo de Persona                                   INNSNK120115017201350232000211003000115002901350148000
+/V=F
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 12:08:21PABLOP
+CNNNNN ME00000000000000000000100
+/?=(C834='J')O(C834='I')
+/M=Error- Tipo de Persona NO es Correcto
+*$2020-02-21 12:08:21PABLOP
+ NNNNN 00193   Numero Persona                                    INNSN 000007015000270210000211003000007000700270126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 12:08:21PABLOP
+ NNNNN 01401   Número Persona                                    INNSNA000037017500600315001011000000037005600600160000
+/V=C193.7
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 12:08:21PABLOP
+CNNNNN ME00000000000000000000100
+/?=C1401=0
+/M=Error - Dato ingresado con valor = 0
+*$2020-02-21 12:08:21PABLOP
+CNNNNN   00000000000000000000100
+/F=C1401#0
+/P=I30
+/M=Prendio I 30
+*$2020-02-21 12:08:21PABLOP
+*N  NN //Se agrega la transacción 13 para mantener
+*$2020-02-21 12:08:21PABLOP
+*N  NN //el mismo nº de persona al agregar Documentos
+*$2020-02-21 12:08:21PABLOP
+ NNNNN 04143   Codigo 13                                         INNSNK000007015200270202000011000100007000700270137000
+/V=0
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 12:08:21PABLOP
+CNNNNN   00000000000000000000100
+/F=C4143=0
+/P=I79
+*$2020-02-21 12:08:21PABLOP
+TN  NN 1006TConsulta Documento Persona (Cónyuge)    C00001 00
+/?=I20YI61
+*$2020-02-21 11:31:15PABLOP
+VNNNNN 150002000204730800SSSD000000000000000000000000000000000000000
+/T=Persona Cónyuge/Concubino
+/C=192192192
+*$2020-03-07 17:42:03AORTIZ
+KNNNNN 150003001002290764000101
+/T=1 - Identificación y Gestión
+/F=0013700NNN000000000Arial                                   
+*$2020-03-07 17:42:48AORTIZ
+ NNNNN 33800   Código                                            INNNNK000007015200300302021011000000007000700300137000
+/V=1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:04:14AORTIZ
+ NNNNN 33801   Descripción                                       INNNN 000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:04:14AORTIZ
+ NNNNN 33803   Numérico                                          INNNN 000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:09:29AORTIZ
+ NNNNN 33802   Alfa                                              INNNN 000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:09:37AORTIZ
+ NNNNN 33803   País Doc Identificativo                           IDNSNA150024019700470303021011500000026003300490172000
+/V=C33803
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-06 17:00:52FMK
+ NNNNN 33802   Alfa                                              ICNSNA150024032400470497001011500000027003500500139000
+/V=C33802
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:31:27AORTIZ
+ NNNNN 04949   Pais Doc Identificativo                           INNSNA150027017100500254021011000000027003300500161000
+/V=C33803
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-25 18:10:43PABLOP
+*N  NN ====Leo País con Macro 334 Descripción País
+*$2020-02-21 11:04:16PABLOP
+*N  NN *Asumo País para la Macro
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 06494   Pais                                              INNSNA000027028500500441001010000000037002700570125000
+/V=C4949.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+*N  NN Armo el Where con el código de país
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01935   Codigo de Pais                                    INNSNA000027028500500441001010000000037002700570125000
+/V=C6494.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+*N  NN *Inicializo campo que retorna
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 02636   Tipo cliente                                      INNSN 000027028500500441001010000000037002700570125000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+CNNNNN  R00000000000000000000100
+/R=334
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 02636   Tipo cliente                                      INNSN 150121027001440437001010000000425051404480618000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-03 12:46:09AORTIZ
+*N  NN ====Fin Macro 334
+*$2020-02-21 11:04:16PABLOP
+*N  NN //Indicador para saber si es un país
+*$2020-02-21 11:04:16PABLOP
+*N  NN diferente a Uruguay, Argentina, Brasil y Paraguay
+*$2020-02-21 11:04:16PABLOP
+CNNNNN   00000000000000000000100
+/F=C4949#858YC4949#32YC4949#76YC4949#600
+/P=I52
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01448   Unipersonal                                       INNSNK150291014903710339001011110000289002803090126000
+/V=N
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01241   Tipo Persona                                      INNSNK150095023201180394001011000000095009601180217000
+/V=F
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:10:57PABLOP
+ NNNNN 08010   Filtro ayuda                                      INSSNF000037002703050764000011000000026001700460136000
+/V="TIPOPERSONA=" +"'"+C1241+"'"+""
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-27 11:06:07PABLOP
+ NNNNN 01242   Código País                                       INNSNA150130023201530340001011000000130009601530217000
+/V=C33803
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:15:39AORTIZ
+ NNNNN 00751   Tipo Doc Identificativo                           I NSN 150052019600750283001010000000053003300760189000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:31:22AORTIZ
+ NNNNN 01240   Tipo Documento                                    INNSNA040120006003220733001011000000060009600830217000
+/V=C751
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01243   Nombre País                                       INNSN 040120006003220733001011000000060009600830217000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+CNNNNN ME00000000000000000000100
+/F=C9509=0
+/M=ERROR. Documento no válido para el País/Tipo de Persona
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01436   Fecha Act Ident                                   INNSNA150189015002120340001011000000189003202120130000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+*N  NN //Consulta por el 2o índice
+*$2020-02-21 11:04:16PABLOP
+*N  NN para q no se repita Tipo Doc. - No Doc.
+*$2020-02-21 11:04:16PABLOP
+ NSSNS 01855   Tipo Documento                                    INNSNA150065018400880267001011000000065006500880169000
+/V=C1240.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:11:14PABLOP
+CNNNNN   00000000000000000000100
+/?=A(C1855="CUIL")
+/P=I6
+/M=CUIL
+*$2020-03-11 10:44:43AORTIZ
+CNNNNN   00000000000000000000100
+/?=A(C1855="CUIT")
+/P=I7
+/M=CUIT
+*$2020-03-03 12:47:38AORTIZ
+CNNNNN   00000000000000000000100
+/?=A(C1855="CDI")
+/P=I8
+/M=CDI
+*$2020-03-11 10:44:37AORTIZ
+ NNNNN 01014   Nro Doc Identificativo                            I NSNK150052053300750678020210003000052039000750523000
+/?=I6
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:30:09AORTIZ
+ NNNNN 01014   Nro Doc Identificativo                            I NSNK150052053300750678020210003000052039000750523000
+/?=I7
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:30:20AORTIZ
+ NNNNN 01014   Nro. Doc Identificativo                           I NSN 150052053300750657020210003000052037900750516000
+/?=I8
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-24 12:37:20PABLOP
+ NNNNN 01856   Nro. Documento                                    INNNNA000075049400980678000211003000075037500980479000
+/?=I8
+/V=C1014
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-11 10:44:51AORTIZ
+ NNNNN 01856   Nro. Documento                                    INNNNA150075049400980678000211003000075037500980479000
+/V=C1014
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 19:26:01AORTIZ
+CNNNNN   00000000000000000000100
+/?=(F(LEN,C1856)>0)
+/F=F(VALIDCHARS,2,C1856,"DOCUMENTO")
+/P=I290
+*$2020-05-06 11:54:06ANDRES
+CNNNNN ME00000000000000000000100
+/?=(F(LEN,C1856)>0)
+/F=!(I290)
+/M=Nro. Doc. no valido!
+*$2020-05-06 11:54:06ANDRES
+CNNNNN ME00000000000000000000100
+/?=(F(LEN,C1856)#11)Y!(A(C1855="CDI"))
+/M=Error - Largo de documento no válido!
+*$2020-04-06 16:49:43FMK
+*N  NN *** INICIO NBCH-DEF-172 ***
+*$2020-04-20 13:47:55LURRUTTY
+CNNNNN ME00000000000000000000100
+/?=(F(LEN,C1856)#11)Y(A(C1855="CDI"))
+/M=Error - Largo de documento no válido!
+*$2020-04-20 13:48:38LURRUTTY
+*N  NN *** FIN NBCH-DEF-172 ***
+*$2020-04-20 13:48:27LURRUTTY
+CNNNNN ME00000000000000000000100
+/?=I6Y(A(C1856<"20000000000"))
+/M=Error - Documento no válido para CUIL
+*$2020-05-14 09:35:24LURRUTTY
+CNNNNN ME00000000000000000000100
+/?=I6Y(A(C1856>"30000000000"))
+/M=Error - Documento no válido para CUIL
+*$2020-05-14 09:35:34LURRUTTY
+CNNNNN ME00000000000000000000100
+/?=I7Y(A(C1856<"30000000000"))
+/M=Error - Documento no válido para CUIT
+*$2020-05-14 09:36:09LURRUTTY
+CNNNNN ME00000000000000000000100
+/?=I8Y(A(C1856>"20000000000"))
+/M=Error - Documento no válido para CDI
+*$2020-05-14 09:36:41LURRUTTY
+CNNNNN ME00000000000000000000100
+/?=((A(C1856<"30000000000"))Y(A(C1855="CUIT")))Y1=0
+/M=Error - Documento no valido para CUIT
+*$2020-03-03 12:47:54AORTIZ
+CNNNNN ME00000000000000000000100
+/?=((A(C1856<"20000000000"))YI6)Y1=0
+/M=Error - Documento no valido!
+*$2020-03-03 12:47:54AORTIZ
+CNNNNN ME00000000000000000000100
+/?=((A(C1856<"30000000000"))Y(A(C1855="CUIT")))Y1=0
+/M=Error - Documento no valido para CUIT
+*$2020-03-03 12:47:54AORTIZ
+CNNNNN ME00000000000000000000100
+/?=C1856='0'
+/M=Error - dato ingresado con valor = 0
+*$2020-03-03 12:47:54AORTIZ
+ NNNNN 01861   Tipo Persona                                      INNNN 150075049400980678000211003000075037500980479000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+CNNNNN ME00000000000000000000100
+/?=(C9509#0)Y(C1855.24=C1855.2)Y(C1856.24=C1856.2)
+/M=El tipo y número de documento corresponden al titular
+*$2020-02-21 12:00:53PABLOP
+CNNNNN   00000000000000000000100
+/?=C9509#0
+/P=I22
+/M=La persona seleccionada ya existe.
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 04949   País Doc Físico                                   IINSNA150080019701030284021010500000080003301030159000
+/?=!(I22OI23)YI6
+/V=C33803.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-06 17:01:50FMK
+ NNNNN 04949   País Doc Físico                                   I NSNK150080019701030284021010000000080003301030159000
+/?=!(I22OI23)YI8
+/V=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-06 17:01:41FMK
+CNNNNN ME00000000000000000000100
+/?=!(I22OI23)YI8Y!I6Y(C4949=32)
+/M=Error - Debe seleccionar otro país!
+*$2020-04-06 16:50:42FMK
+ NNNNN 01936   Nombre                                            ICNSN 150080032401030497001010500000037002700570125000
+/?=!(I22OI23)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 16:32:58AORTIZ
+ NNNNN 33321   COD_PAIS_ORIGEN                                   INNNNA000075049400980678000211003000075037500980479000
+/?=!(I22OI23)
+/V=C4949.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-24 12:55:45PABLOP
+ NNNNN 08010   Filtro ayuda                                      INSSNF000037002703050764000011000000026001700460136000
+/?=!I82Y!I100
+/V="COD_PAIS_ORIGEN=" +C4949+""
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-24 12:56:12PABLOP
+ NNNNN 33350   Tipo Doc Físico                                   I SSN 150107019701300284000010000000107003301300138000
+/?=!(I22OI23)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-06 17:02:13FMK
+ NNNNN 33320   TIPO_DOC_FISICO                                   INNNNA000075049400980678000211003000075037500980479000
+/?=!(I22OI23)
+/V=C33350
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-24 12:57:21PABLOP
+ NSSNS 01858   Fecha Presen.                                     IDNSNA150134019801570333001010500000134003301570117000
+/?=!(I22OI23)
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 19:27:22AORTIZ
+ NNNNN 33323   Nro Doc. Físico                                   I NSN 150107053301300678020210003000107039001300529000
+/?=!(I22OI23)
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-06 17:02:34FMK
+CNNNNN   00000000000000000000100
+/?=!(I22OI23)
+/F=F(VALIDCHARS,2,C33323,"DOCUMENTO")
+/P=I290
+*$2020-05-06 11:55:36ANDRES
+CNNNNN ME00000000000000000000100
+/?=!(I22OI23)
+/F=!(I290)
+/M=Nro. Doc. no valido!
+*$2020-05-06 11:55:36ANDRES
+*N  NN *** INICIO NBCH-DEF-160 Y NBCH-DEF-161 ***
+*$2020-04-20 13:49:14LURRUTTY
+CNNNNN ME00000000000000000000100
+/?=A(C33350="DNI")OA(C33350="LC")OA(C33350="LE")
+/F=F(LEN,C33323)#8
+/M=Error - El largo del documento debe ser de 8
+*$2020-04-20 13:50:56LURRUTTY
+CNNNNN ME00000000000000000000100
+/?=(A(C33350="DNI")OA(C33350="LC")OA(C33350="LE"))Y(F(MID, C1856.24, 3, 8)#C33323)
+/M=Error - El doc. no coincide con el CUIL!
+*$2020-05-21 11:41:24PABLOP
+*N  NN *** FIN NBCH-DEF-160 Y NBCH-DEF-161 ***
+*$2020-04-20 13:49:39LURRUTTY
+ NNNNN 33322   NUM_DOC_FISICO                                    INNNNA000075049400980678000211003000075037500980479000
+/?=!(I22OI23)
+/V=C33323
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 19:27:43AORTIZ
+ NSSNS 01859   Vencimiento                                       I NSN 150161019601840312000010000000161003401840109000
+/?=!(I22OI23)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 19:27:47AORTIZ
+CNNNNN ME00000000000000000000100
+/?=(C1858>C9500)Y(1=0)
+/M=Error - Debe ser una fecha igual o menor a la del sistema
+*$2020-04-24 17:01:33JBENTAN
+CNNNNN ME00000000000000000000100
+/?=(C1858<C9500)Y(1=0)
+/M=Debe ingresar fecha de vencimiento valida!
+*$2020-04-24 17:01:44JBENTAN
+CNNNNN M 00000000000000000000100
+/?=C1859=C9500
+/M=El documento vence hoy! Desea continuar?
+*$2020-03-17 14:31:38AORTIZ
+CNNNNN M 00000000000000000000100
+/?=C1859<C9500
+/M=El documento esta vencido!!! Desea continuar?
+*$2020-03-17 14:31:38AORTIZ
+ NSSNS 33324   Nro de Trámite                                    I NSN 150161053301840678001010000000161039001840492000
+/?=A(C33350="DNI")
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-06 17:02:52FMK
+CNNNNN ME00000000000000000000100
+/?=A(C33350="DNI")
+/F=!F(VALIDCHARS,1,C33324,"0123456789")
+/M=Verifique el Nro. Trámite!!!
+*$2020-05-29 17:03:51PABLOP
+CNNNNN ME00000000000000000000100
+/?=A(C33350="DNI")
+/F=(F(LEN,C33324)#11)
+/M=El Nro. Trámite debe ser de Largo 11!!!
+*$2020-05-19 16:46:49PABLOP
+ NSSNS 03800   Ejemplar                                          I NSN 150188053302110678001010000000188039002110465000
+/?=A(C33350="DNI")
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-17 14:32:52AORTIZ
+ NNNNN 04161   ValidoCaracters                                   INNSNF000007015200270452020011000100007000700270137000
+/?=A(C33350="DNI")
+/V=F(VALIDCHARS,2,C3800,"mayus")
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-03-17 14:32:39AORTIZ
+CNNNNN ME00000000000000000000100
+/?=A(C33350="DNI")
+/F=C4161=0
+/M=Error - Debe ingresar dato válido!
+*$2020-03-17 14:32:39AORTIZ
+ NSSNS 33325   Ejemplar                                          INNSNA140092065501150771000010000000092055501150630000
+/?=A(C33350="DNI")
+/V=C3800
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-17 14:32:39AORTIZ
+*N  NN //Si el documento ya existe
+*$2020-02-21 11:04:16PABLOP
+*N  NN //Consulto si la persona está relacionado
+*$2020-02-21 11:04:16PABLOP
+*N  NN con algún cliente para saber si ejecuto op.1422
+*$2020-02-21 11:04:16PABLOP
+*N  NN --------------------------------------------------
+*$2020-02-21 11:04:16PABLOP
+ NSSNS 01505   Nro Persona                                       INNSNA150075019500980278001011000000075007600980180000
+/?=I22Y1=0
+/V=C1854.13
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+ NSSNS 01506   Titularidad                                       INNSN 150075019500980278001011000000075007600980180000
+/?=I22Y1=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+CNNNNN   00000000000000000000100
+/?=I22YC9509=0
+/P=I23
+/M=La persona no está relacionada con un cliente
+*$2020-06-04 12:40:17PABLOP
+*N  NN //Si el documento ya existe y la persona
+*$2020-02-21 11:04:16PABLOP
+*N  NN //no está relacionada muestro la persona
+*$2020-02-21 11:04:16PABLOP
+ NSSNS 01401   Numero Persona                                    INNSNA150075019500980278001011000000075007600980180000
+/?=I23
+/V=C1854.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:47:11PABLOP
+*N  NN --------------------------------------------------
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01857   País Documento                                    INNSNA150131017601540259001011000000131005701540161000
+/V=C33803.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-20 16:30:04LURRUTTY
+ NNNNN 00081   Codigo Pais                                       INNSNA150131017601540259001011000000131005701540161000
+/V=C1857
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01936   Nombre                                            INNSN 150049029800720538001211003000007000700270126000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+*N  NN ===============
+*$2020-02-21 11:04:16PABLOP
+*N  NN Controla que el cónyuge a ingresar ya no tenga una relación en la tabla
+*$2020-02-21 11:04:16PABLOP
+*N  NN Por número de persona
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01239   Numérico                                          INNSNK000007015200270202000011000100007000700270137000
+/?=I22
+/V=0
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01491   Nro. Persona                                      INNSNA000007015200270202000011000100007000700270137000
+/?=I22
+/V=C1854
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 11:04:16PABLOP
+CN  NN  R00000000000000000000100
+/?=I22
+/R=331
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01239   Numérico                                          INNSN 000007015200270202000011000100007000700270137000
+/?=I22
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 11:04:16PABLOP
+CNNNNN ME00000000000000000000100
+/?=C1239=1Y(I22OI23)
+/M=Error. El cónyuge seleccionado ya tiene relación.
+*$2020-02-21 11:04:16PABLOP
+*N  NN ===============
+*$2020-02-21 11:04:16PABLOP
+*N  NN ===============
+*$2020-02-21 11:04:16PABLOP
+*N  NN Controla que el cónyuge a ingresar ya no tenga una relación en la tabla
+*$2020-02-21 11:04:16PABLOP
+*N  NN Por número de persona
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 08889                                                     INNSNK000007015200270202000011000100007000700270137000
+/?=I22
+/V=0
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01492   Nro. Cónyuge                                      INNSNA000007015200270202000011000100007000700270137000
+/?=I22
+/V=C1854
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 11:04:16PABLOP
+CNNNNN  R00000000000000000000100
+/?=I22
+/R=332
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 08889                                                     INNSN 000007015200270202000011000100007000700270137000
+/?=I22
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 11:04:16PABLOP
+CNNNNN ME00000000000000000000100
+/?=C8889=1Y(I22OI23)
+/M=Error. El cónyuge seleccionado ya tiene relación. 
+*$2020-02-21 11:04:16PABLOP
+*N  NN ===============
+*$2020-02-21 11:04:16PABLOP
+*N  NN //Si el documento ingresado ya existe
+*$2020-02-21 11:04:16PABLOP
+*N  NN //y la persona está relacionada con un cliente
+*$2020-02-21 11:04:16PABLOP
+*N  NN muestro los datos de la persona y clientes
+*$2020-02-21 11:04:16PABLOP
+*N  NN --------------------------------------------------
+*$2020-02-21 11:04:16PABLOP
+CNNNNN ME00000000000000000000100
+/?=(C1858>C9500)Y!(I22OI23)
+/M=Error - Debe ser una fecha igual o menor a la del sistema
+*$2020-02-21 11:04:16PABLOP
+*N  NN //fecha ven. doc. es opcional, si no ingresa una fecha no se controla
+*$2020-02-21 11:04:16PABLOP
+ NSSNS 00127   Fecha                                             INSSN 040148049401710594000011000000148037501710479000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+CNNNNN   00000000000000000000100
+/?=C1859#C127YC1859<C9500
+/M=Error - Documento NO Vigente
+*$2020-03-24 12:43:36PABLOP
+*N  NN INICIO GAP 14 20200218
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01860   Org. Control?                                     INNSNK150062071200850765001010000000062063200850708000
+/V=S
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01860   Org. Control?                                     INNSNK150062071200850765001010000000062063200850708000
+/?=1=0
+/V=N
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+CNNNNN   00000000000000000000100
+/?=1=0
+/P=I62
+*$2020-02-21 11:04:16PABLOP
+*N  NN FIN GAP 14 20200218
+*$2020-02-21 11:04:16PABLOP
+KNNNNN 150242001003960763000001
+/?=!(I22OI23)Y!I80
+/T=2 - Filiatorios
+/F=0012700NNN000000000Arial                                   
+*$2020-03-07 17:42:39AORTIZ
+*N  NN //campo vacío para q no tome valores anteriores
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 00349   Alfa de 35                                        INNSN 150067017500900462001011000000067005600900160000
+/?=!(I22OI23)
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 00838   Apell. Paterno                                    I NSNA150260016002830447000010000000260003402830138000
+/?=!(I22OI23)Y!I80
+/V=C349.0
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 17:42:24AORTIZ
+ NNNNN 01418   Apell. Paterno                                    INNSNA150032017700550464001010000000032005800550162000
+/?=!(I22OI23)
+/V=C838.0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 12:34:41PABLOP
+CNNNNN ME00000000000000000000100
+/?=C1418=' 'Y!(I22OI23)Y!I80
+/M=Error - Dato ingresado en blanco 
+*$2020-02-21 11:04:16PABLOP
+*N  NN //uso el 1403 para forzar lectura x Apellido
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01403   Estado Civil                                      INSSN 150061017800840465000011000000061005900840163000
+/?=!(I22OI23)
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:04:16PABLOP
+*N  NN //uso el 1401 x si el Apellido ya existe
+*$2020-02-21 11:04:16PABLOP
+*N  NN lo cual trae los datos de dicha PF
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01401   Numero Persona                                    INSSNA150061017800840465000011000000061005900840163000
+/?=!(I22OI23)
+/V=C1401.0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:47:29PABLOP
+ NNNNN 01420   Apell. Materno                                    I SSNA150292016003150447001010000000292003403150138000
+/?=!(I22OI23)Y!I80
+/V=C349.0
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 17:42:21AORTIZ
+CNNNNN M 00000000000000000000100
+/?=C1420=' 'Y!(I22OI23)Y!I80
+/M=AVISO - Dato ingresado en blanco 
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01421   Primer Nombre                                     I NSNA150324016003470447001010000000324003403470138000
+/?=!(I22OI23)Y!I80
+/V=C349.0
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 17:42:20AORTIZ
+CNNNNN ME00000000000000000000100
+/?=C1421=' 'Y!(I22OI23)Y!I80
+/M=Error - Dato ingresado en blanco 
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 01422   Segundo Nombre                                    I SSNA150356016003790447001010000000356003403790138000
+/?=!(I22OI23)Y!I80
+/V=C349.0
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 17:42:20AORTIZ
+*N  NN Se armo de esta forma por Control de Documentos
+*$2020-02-21 11:04:16PABLOP
+*N  NN //Consulta por el 2o índice
+*$2020-02-21 11:04:16PABLOP
+CNNNNN   00000000000000000000110
+/M=C1418
+*$2020-02-21 11:04:16PABLOP
+*N  NN para q no se repita Tipo Doc. - No Doc.
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 09097   Tipo Documento                                    INNSNF000007015200270302020011000100007000700270137000
+/?=C488=0
+/V=C1855.13
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 03981   NroDocumento                                      INNSNF000007015200270302020011000100007000700270137000
+/?=C488=0
+/V=C1856.13
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 11:04:16PABLOP
+ NNNNN 00477   Fecha Vto.                                        INNSNF000007015200270302020011000100007000700270137000
+/?=C488=0
+/V=C1859
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 11:04:16PABLOP
+TN  NN 1006TConsulto Conyuge ya existente           C00001 00
+/?=I20Y(I22OI23)YI61
+*$2020-03-07 18:59:39AORTIZ
+VNNNNN 180002000204430801NNND000000000000000000000000000000000000000
+/T=Muestro Persona
+/C=192192192
+*$2020-02-21 11:45:40PABLOP
+KNNNNN 180008001903330768000101
+/T=Consulta cónyuge/concubino
+/F=0012700NNN000000000Arial                                   
+*$2020-02-21 11:34:58PABLOP
+ NNNNN 01401   Numero Persona                                    INNSNA180026035900490576001011000000026026100490391000
+/V=C1854.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:35:06PABLOP
+ NNNNN 01420   Apell. Materno                                    IDSSN 180122016201450379001010500000122005701450161000
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:50:09PABLOP
+ NNNNN 01418   Apell. Paterno                                    IDNSN 180048016200710379001011500000048005700710151000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:49:57PABLOP
+ NNNNN 01421   Primer Nombre                                     IDNSN 180196016202190379001011500000196005702190151000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:50:09PABLOP
+ NNNNN 01422   Segundo Nombre                                    IDSSN 180272016202950379001010500000272005702950161000
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:49:57PABLOP
+ NNNNN 00643   Tipo Persona                                      INNSNK180182014102050268001011000000182003602050130000
+/V=Física
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:34:58PABLOP
+ NNNNN 01402   Fcha Nacimiento                                   INNSN 180211016902340329001011500000211006402340158000
+/?=1=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:49:14PABLOP
+ NNNNN 01404   Sexo                                              INNSN 180249016902720329001011500000249006402720158000
+/?=1=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:49:14PABLOP
+ NNNNN 01403   Estado Civil                                      INNSN 180285016903080329001010500000285006403080158000
+/?=1=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:49:14PABLOP
+TN  NN 1006TConsulta Documento Persona (Cónyuge)    C00171 00
+/?=I20YI22
+*$2020-02-21 12:22:21PABLOP
+*N  NN --------------------------------------------------
+*$2020-02-21 11:36:15PABLOP
+*N  NN Se controla si la persona cónyuge está casada con otra persona (bug 651)
+*$2020-02-21 11:36:15PABLOP
+CNSSNS   00000000000000000000100
+/A=I26
+*$2020-02-21 11:36:15PABLOP
+*N  NN --------------------------------------------------
+*$2020-02-21 11:36:15PABLOP
+ NSSNS 01492   Nro. Cónyuge                                      INNSNA020040016400630283000011000000040005000630150000
+/V=C1854.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:36:23PABLOP
+ NSSNS 01495   Fecha                                             INNSN 020040016400630283000011000000040005000630150000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:36:15PABLOP
+CNSSNS ME00000000000000000000100
+/F=C9509=1
+/P=I26
+/M=Error - La persona ya existe como cónyuge
+*$2020-02-21 11:36:15PABLOP
+*N  NN --------------------------------------------------
+*$2020-02-21 11:36:15PABLOP
+TN  NN 1001TAlta DocumentoPersona                   A00341 00
+/?=I20Y!(I22OI23)YI61
+*$2020-02-21 12:22:26PABLOP
+ NNNNN 00647   TipoDocumento                                     INSSNA000084017001070270000010000000084005101040149000
+/?=I79
+/V=C1855.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:19PABLOP
+ NNNNN 00641   Documento                                         INSSNA000084017001070270000010000000084005101040149000
+/?=I79
+/V=C1856.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:22PABLOP
+ NNNNN 03881   Apell. Paterno                                    INNSNA000033017700560464001010000000034006000570164000
+/?=I79
+/V=C838.24
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:25PABLOP
+ NNNNN 03882   Apell. Materno                                    INNSNA000154015601770443001010000000154002201770126000
+/?=I79
+/V=C1420.24
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:28PABLOP
+ NNNNN 03883   Primer Nombre                                     INNSNA000184015602070443001010000000184002202070126000
+/?=I79
+/V=C1421.24
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:31PABLOP
+ NNNNN 03884   Segundo Nombre                                    INSSNA000214015602370443001010000000214002202370126000
+/?=I79
+/V=C1422.24
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:34PABLOP
+ NNNNN 03794   Fecha Informe                                     INNSNA000245015602680243000010000000245002202680126000
+/?=I79
+/V=C1402.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:37PABLOP
+ NNNNN 00612   Pais Nacimiento                                   INNSNA000244041802670505021010000000244029002670394000
+/?=I79
+/V=C1423.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:39PABLOP
+ NNNNN 05103   Nacionalidad                                      INNSNA000274015602970443000010000000274002202970126000
+/?=I79
+/V=C1424.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:41PABLOP
+ NNNNN 05007   Sexo                                              INNSNA000304015603810346000010000000304002203270126000
+/?=I79
+/V=C1404.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:45PABLOP
+ NNNNN 00556   Estado Civil                                      INNSNA000304048605010676000010000000304035803270462000
+/?=I79
+/V=C1403.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:51PABLOP
+ NNNNN 03963   Texto                                             INNSNA000304048605010676000010000000304035803270462000
+/?=I79
+/V=C1446.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:49PABLOP
+ NNNNN 00624   Nacionalidad                                      INNSNA000304048605010676000010000000304035803270462000
+/?=I79
+/V=C1424.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:53PABLOP
+ NSSNS 01854   Nro Persona                                       INNSNA000145019501680314001011000000145007601680180000
+/V=C1401.23
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 12:13:09PABLOP
+ NSSNS 01855   Tipo Documento                                    INNSNA000075019500980278001011000000075007600980180000
+/V=C1855.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:58PABLOP
+ NNNNN 01857   País Documento                                    INNSNA000110019501330278001011000000110007601330180000
+/V=C1857.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:38:00PABLOP
+ NNNNN 01856   Nro. Documento                                    INNNNA000075049400980678000211003000075037500980479000
+/V=C1856.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:38:04PABLOP
+ NSSNS 01858   Fecha Presen.                                     INNSNA000180019502030295000011000000180007602030180000
+/V=C1858.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:38:07PABLOP
+ NSSNS 01859   Fecha de Vcmto.                                   INNSNA000180049402030594000011000000180037502030479000
+/V=C1859.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 12:30:13PABLOP
+ NNNNN 01860   Org. Control?                                     INNSNA000230031603190463000011110000251008102740193000
+/V=C1860.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:38:12PABLOP
+ NNNNN 01861   Tipo Persona                                      INNSNK000230031603190463000011000000251008102740193000
+/V=F
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:37:14PABLOP
+ NNNNN 33320   TIPO_DOC_FISICO                                   INNSNA000230031603190463000011000000251008102740193000
+/V=C33320.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:38:29AORTIZ
+ NNNNN 33321   COD_PAIS_ORIGEN                                   INNSNA000230031603190463000011000000251008102740193000
+/V=C33321.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:38:29AORTIZ
+ NNNNN 33322   NUM_DOC_FISICO                                    INNSNA000230031603190463000011000000251008102740193000
+/V=C33322.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:38:29AORTIZ
+ NSSNS 33324   Nro de Tramite                                    INNSNA150187014302100259000010000000187003402100136000
+/?=A(C33320="DNI")
+/V=C33324.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:38:29AORTIZ
+ NSSNS 33325   Ejemplar                                          INNSNA150187036602100460000010000000187027802100353000
+/?=A(C33320="DNI")
+/V=C33325.24
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:38:29AORTIZ
+TN  NN 1001TAlta bitacora documentos                A33331 00
+/?=I20Y!(I22OI23)YI61
+*$2020-05-08 12:41:26ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:41:08ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=A
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:41:35ESOTELO
+DN  NN 1023SS
+*$2020-05-08 12:41:08ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:41:08ESOTELO
+TN  NN 0110TAlta Persona Física (Cónyuge)           A00141 00
+/?=I20Y!(I22OI23)YI61
+*$2020-02-21 12:22:31PABLOP
+ NNNNN 01401   Número Persona                                    INNSNA000037015000570330001011000000037002800570142000
+/V=C1401.23
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 12:26:03PABLOP
+*N  NN *M
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01418   Apell. Paterno                                    INNSNA000065015000850437001011000000065002800850126000
+/V=C1418.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:50:22PABLOP
+ NNNNN 01420   Apell. Materno                                    INNSNA000093015001130437000011000000093002801130141000
+/V=C1420.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:50:25PABLOP
+ NNNNN 01421   Primer Nombre                                     INNSNA000121015001410437001011000000121002801410126000
+/V=C1421.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:50:27PABLOP
+ NNNNN 01422   Segundo Nombre                                    INNSNA000149015001690437001011000000149002901690132000
+/V=C1422.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:50:30PABLOP
+*N  NN INICIO GAP 14 20200218
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01402   Fcha.Nacimiento                                   INNSNA000177015001970237000011000000177002801970126000
+/?=1=0
+/V=C1402.41
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01423   Pais Nacimiento                                   INNSNA000204015002240237001011000000204002902240127000
+/?=1=0
+/V=C1423.41
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01935   Codigo de Pais                                    INNSNA000204015002240237001011000000204002902240127000
+/?=1=0
+/V=C1423.60
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01936   Nombre                                            INNSN 000204015002240237001011000000204002902240127000
+/?=1=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 02238   Libre                                             INNSNA000204015002240237001011000000204002902240127000
+/?=1=0
+/V=C1936
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01424   Nacionalidad                                      INNSNA000233015002530437001011000000233002802530126000
+/?=1=0
+/V=C624.46
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01404   Sexo                                              INNSNA000260014903290339001011110000261002802810126000
+/?=1=0
+/V=C1404.41
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01403   Estado Civil                                      INNSNA000291014903710339001011110000289002803090126000
+/V=C1403.16
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 12:34:25PABLOP
+*N  NN *M
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01418   Apell. Paterno                                    INNSNA000065015000850437001011000000065002800850126000
+/?=1=0
+/V=C3881.46
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01420   Apell. Materno                                    INNSNA000093015001130437000011000000093002801130141000
+/?=1=0
+/V=C3882.46
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01421   Primer Nombre                                     INNSNA000121015001410437001011000000121002801410126000
+/?=1=0
+/V=C3883.46
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01422   Segundo Nombre                                    INNSNA000149015001690437001011000000149002901690132000
+/?=1=0
+/V=C3884.46
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01402   Fcha.Nacimiento                                   INNSNA000177015001970237000011000000177002801970126000
+/?=1=0
+/V=C3794.46
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01423   Pais Nacimiento                                   INNSNA000204015002240237001011000000204002902240127000
+/?=1=0
+/V=C612.46
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01424   Nacionalidad                                      INNSNA000233015002530437001011000000233002802530126000
+/?=1=0
+/V=C5103.46
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01404   Sexo                                              INNSNA000260014903290339001011110000261002802810126000
+/?=1=0
+/V=C5007.46
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01403   Estado Civil                                      INNSNA000291014903710339001011110000289002803090126000
+/?=1=0
+/V=C556.46
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01448   Unipersonal                                       INNSNK000291014903710339001011110000289002803090126000
+/V=N
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01436   Fecha Act Ident                                   INNSNA000291014903710339001011000000289002803090126000
+/V=C9500
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 12:53:34PABLOP
+ NNNNN 01446   Descripción                                       INSSNA000291014903710339001011000000289002803090126000
+/?=1=0
+/V=C1446.41
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01917   Fecha Act Filia                                   INNSNA000291014903710339001011000000289002803090126000
+/?=1=0
+/V=C1917.41
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01412   Pais Residencia                                   INNSNA000291014903710339001011000000289002803090126000
+/?=1=0
+/V=C1412.57
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01437   Cod. Profesión                                    INNSNA000291014903710339001011000000289002803090126000
+/?=1=0
+/V=C1437.57
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01431   Empl. BC/BCO                                      INNSNA000291014903710339001011000000289002803090126000
+/?=1=0
+/V=C1431.58
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01919   Fecha Act Econ                                    INNSNA000291014903710339001011000000289002803090126000
+/?=1=0
+/V=C1919.58
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01432   Tipo d/Vivienda                                   INNSNK100245060502680692001011000000245048502680583000
+/?=1=0
+/V=N
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01906   Inc Lista Negra                                   INNSNA000048015000710368001010000000048003100710129000
+/?=1=0
+/V=C1906.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01907   Inc Lista Negat                                   INNSNK000050051100730598001011000000050039200730490000
+/?=1=0
+/V=N
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 02345   Incluido PEPs                                     INSSNA000083015101710238001011110000083003101060129000
+/?=1=0
+/V=C2345.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01908   Perfil Trace                                      INSSNA000083038001060598021011000000083026001060358000
+/?=1=0
+/V=C1908.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-16 11:36:15PABLOP
+ NNNNN 01920   Fecha Act Gest                                    INNSNA200120015001430322001011000000120002801430126000
+/?=1=0
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01438   Calif.Subjetiva                                   INNSNK200020017500430262000011000000020005600430160000
+/?=1=0
+/V=1C
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 03514   Cat.Objetiva                                      INNSNK200020017500430262000011000000020005600430160000
+/?=1=0
+/V=1C
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01434   Fecha de Alta                                     INNSNA000020017500430262000011000000020005600430160000
+/V=C9500
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-04-30 12:54:20PABLOP
+ NNNNN 01435   Fecha Actualiz.                                   INNSNA200050017500730262001011000000050005600730160000
+/?=1=0
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01902   Código G.E.BCRA                                   INSSNK000190014302130230021011000000190002402130130000
+/?=1=0
+/V=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 02787   IRAE                                              INNSNA000229009303440180000011120000229002802520076000
+/?=1=0
+/V=C2787.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 02788   IMEBA                                             INNSNA000231034203450429000010120000231023102540298000
+/?=1=0
+/V=C2788.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 07549   Opcion IRAE                                       INNSNA000231057903460666000010120000231047002540568000
+/?=1=0
+/V=C7549.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 02789   IPEQUE                                            INNSNA000273009002960177001010000000273002802960078000
+/?=1=0
+/V=C2789.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01909   MONOTRIBUTO                                       INNSNA000271034103850428001010120000271023102940329000
+/?=1=0
+/V=C1909.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 08978   Serv.Personales                                   INNSNA000271057903860666000011120000271047002940568000
+/?=1=0
+/V=C8978
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01921   Fecha Act Riesg                                   INNSNA200245060502680692001011000000245048502680583000
+/?=1=0
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 02369   Ing. Prom.Pesos                                   INNSNF000245060502680692001011000000245048502680583000
+/?=1=0
+/V=C1272.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+*N  NN //Datos del grupo Auditoría q no se muestran
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01428   Fallecido                                         INNSNK200090017501130262001011000000090005601130160000
+/?=1=0
+/V=N
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 01922   Fecha Act Audit                                   INNSNA200325015003480237001011000000325002703480125000
+/?=1=0
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+*N  NN //Campo que indica que es un alta Registro
+*$2020-02-21 11:42:52PABLOP
+*N  NN FIN GAP 14 20200218
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 02203   Nivel apertura                                    INNSNK000325015003480237001011000000325002703480125000
+/V=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:42:52PABLOP
+CNNNNN   00000000000000000000100
+/P=I105
+/A=I106
+*$2020-02-21 11:42:52PABLOP
+*N  NN *M
+*$2020-02-21 11:42:52PABLOP
+ NSSNS 01855   Tipo Documento                                    INNSNA000075019500980278001011000000075007600980180000
+/V=C1855.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:50:43PABLOP
+ NNNNN 01856   Nro. Documento                                    INNNNA000075049400980678000211003000075037500980479000
+/V=C1856.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:50:45PABLOP
+ NNNNN 33320   TIPO_DOC_FISICO                                   INNSNA000230031603190463000011000000251008102740193000
+/V=C33320.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 17:56:11AORTIZ
+ NNNNN 33321   COD_PAIS_ORIGEN                                   INNSNA000230031603190463000011000000251008102740193000
+/V=C33321.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 17:56:17AORTIZ
+ NNNNN 33322   NUM_DOC_FISICO                                    INNSNA000230031603190463000011000000251008102740193000
+/V=C33322.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 17:56:21AORTIZ
+ NSSNS 33324   Nro de Tramite                                    INNSNA150187014302100259000010000000187003402100136000
+/?=A(C33320="DNI")
+/V=C33324.24
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:37:06AORTIZ
+CNNNNN ME00000000000000000000100
+/?=A(C33350="DNI")
+/F=(F(LEN,C33324)#11)
+/M=El Nro. Trámite debe ser de Largo 11!!!
+*$2020-05-19 16:47:22PABLOP
+ NSSNS 33325   Ejemplar                                          INNSNA150187036602100460000010000000187027802100353000
+/?=A(C33320="DNI")
+/V=C33325.24
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-07 18:37:11AORTIZ
+ NNNNN 33114   PROVINCIA_NACIMIENTO                              INNSNF000089042001120668021010000000089030501120409000
+/V=C33114.16
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 12:46:44AORTIZ
+ NNNNN 33115   LOCALIDAD_NACIMIENTO                              INNSNF000089042001120668021010000000089030501120409000
+/V=C33115.16
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 12:46:49AORTIZ
+ NNNNN 33116   PAIS_RESID_FISCAL                                 INNSNF000089042001120668021010000000089030501120409000
+/?=A(C1441#"2")
+/V=C33116.16
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 14:08:07AORTIZ
+ NNNNN 33116   Pais Res Fiscal                                   INNSNK030308049903310558001010000000308038203310480000
+/?=A(C1441="2")
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 14:07:48AORTIZ
+ NNNNN 00477   Fecha Vto.                                        INNSNL000007015200270302020011000100007000700270137000
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 09097   Tipo Documento                                    INNSNL000007015200270302020011000100007000700270137000
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 11:42:52PABLOP
+ NNNNN 03981   NroDocumento                                      INNSNL000007015200270302020011000100007000700270137000
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-02-21 11:42:52PABLOP
+*N  NN INICIO GAP 14 20200218
+*$2020-02-21 11:42:52PABLOP
+FNNNNN 6916001      N   
+/?=1=0
+*$2020-02-21 11:42:52PABLOP
+*N  NN *M
+*$2020-02-21 11:42:52PABLOP
+TN  NN 1001TAlta bitacora personas fisicas          A33301 00
+/?=I20Y!(I22OI23)YI61
+*$2020-05-08 15:01:35ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:33:02ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=A
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:33:43ESOTELO
+DN  NN 1021SS
+*$2020-05-08 12:33:02ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:33:02ESOTELO
+TN  NN 1008TConsulta Sec. Generica                  S00000 00
+/?=(I20YI61)Y1=0
+*$2020-03-07 19:08:02AORTIZ
+ NSSNS 01492   Nro. Cónyuge                                      INNSNA020040016400630283000011000000040005000630150000
+/?=I22OI23
+/V=C1401.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 13:58:35PABLOP
+ NSSNS 01492   Nro. Cónyuge                                      INNSNA020040016400630283000011000000040005000630150000
+/?=!(I22OI23)
+/V=C1401.25
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 12:28:05PABLOP
+CNSSNS ME00000000000000000000100
+/F=C9509=1
+/M=Error - La persona ya existe como cónyuge/concubino
+*$2020-02-21 14:10:09PABLOP
+TN  NN 1008TConsulta Sec. Generica                  S00000 00
+/?=(I20YI61)Y1=0
+*$2020-03-07 19:08:11AORTIZ
+ NSSNS 01491   Nro. Persona                                      INNSNA020040016400630283000011000000040005000630150000
+/?=I22OI23
+/V=C1401.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 13:58:42PABLOP
+ NSSNS 01491   Nro. Persona                                      INNSNA020040016400630283000011000000040005000630150000
+/?=!(I22OI23)
+/V=C1401.25
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:51:40PABLOP
+CNSSNS ME00000000000000000000100
+/F=C9509=1
+/M=Error - La persona ya existe en una relación
+*$2020-02-21 11:43:25PABLOP
+TN  NN 1001TAlta de Relación Cónyuges               A00171 00
+/?=I20YI61
+*$2020-02-21 12:10:57PABLOP
+*N  NN //ALTA
+*$2020-02-21 11:44:14PABLOP
+*N  NN //PRINCIPIO
+*$2020-02-21 11:44:14PABLOP
+ NNNNN 01491   Nro. Persona                                      INNSNA020036016500590284000011000000036005000590150000
+/V=C1401.2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 15:23:24PABLOP
+ NNNNN 0141810 Apell. Paterno                                    INNSN 250034044800570735001011500000065002800850126000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:44:14PABLOP
+ NNNNN 0142110 Primer Nombre                                     INNSN 250064044800870735001011500000121002801410126000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:44:14PABLOP
+ NNNNN 01492   Nro. Cónyuge                                      INNSNA020036055700590657000011000000036043200590542000
+/?=!(I22OI23)
+/V=C1401.23
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 12:14:25PABLOP
+ NNNNN 01492   Nro. Cónyuge                                      INNSNA020036055700590657000011000000036043200590542000
+/?=I22OI23
+/V=C1401.25
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:54:10PABLOP
+ NNNNN 01493   Tipo Relación                                     INNSNA020066017500890294000011000000066005000890160000
+/V=C1403.16
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:58:23PABLOP
+ NNNNN 01494   Descripción                                       INSSN 020096017301190292000011000000096004801190158000
+/?=1=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:56:19PABLOP
+ NNNNN 01495   Fecha casados                                     INNSN 020096017301190292000011000000096004801190158000
+/?=1=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 11:56:23PABLOP
+TN  NN 1001TAlta bitacora conyugues                 A33361 00
+/?=I20YI61
+*$2020-05-08 12:51:09ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:50:23ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=A
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:50:27ESOTELO
+DN  NN 1026SS
+*$2020-05-08 12:50:54ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:50:23ESOTELO
+TN  NN 1009TModificacion Generica                   M00141 00
+/?=I20YI61
+*$2020-02-21 12:10:57PABLOP
+ NNNNN 01401   Numero Persona                                    INNSNA000007015200300202021011000000007000700300137000
+/V=C1401.2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:52:39PABLOP
+ NSSNS 01421   Primer Nombre                                     INNSN 000035032000580533001011000000030005000530150000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:52:39PABLOP
+ NNNNN 01403   Estado Civil                                      INNSNA000007015200300202001011000000007000700300137000
+/V=C1403.16
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:52:39PABLOP
+TN  NN 1009TModificacion Generica                   M00141 00
+/?=I20YI61
+*$2020-02-21 13:53:16PABLOP
+ NSSNS 01401   Numero Persona                                    INNSNA020040016400630283000011000000040005000630150000
+/?=I22OI23
+/V=C1401.24
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:52:28PABLOP
+ NSSNS 01401   Numero Persona                                    INNSNA020040016400630283000011000000040005000630150000
+/?=!(I22OI23)
+/V=C1401.23
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:52:28PABLOP
+ NSSNS 01421   Primer Nombre                                     INNSN 000035032000580533001011000000030005000530150000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:52:28PABLOP
+ NNNNN 01403   Estado Civil                                      INNSNA000007015200300202001011000000007000700300137000
+/V=C1403.16
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-26 10:52:28PABLOP
+TN  NN 1001TAlta bitacora personas fisicas          A33301 00
+/?=I20YI61
+*$2020-05-08 15:01:52ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:34:15ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:35:05ESOTELO
+DN  NN 1021SS
+*$2020-05-08 12:34:15ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:34:15ESOTELO
+TN  NN 1006TConsulta Baja                           C00001 00
+/?=(!I20)YI61
+*$2020-02-21 14:32:41PABLOP
+ NSSNS 01491   Nro. Persona                                      INNSNA000100016401230254000011000000100005001230150000
+/V=C1401.2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 15:38:45PABLOP
+*N  NN //Fuerzo lectura
+*$2020-02-21 14:32:55PABLOP
+ NSSNS 01493   Tipo Relación                                     INNSN 060100016401230254000011000000100005001230150000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 14:32:55PABLOP
+CNNNNN   00000000000000000000100
+/F=C9509#0
+/P=I90
+*$2020-02-21 14:53:48PABLOP
+TN  NN 1005TBaja de Relacion conyuge/concubino      B00171 00
+/?=(!I20)YI61YI90
+*$2020-02-21 14:38:41PABLOP
+ NSSNS 01491   Nro. Persona                                      INNSNA000100016401230254000011000000100005001230150000
+/V=C1401.2
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 15:38:48PABLOP
+*N  NN //Fuerzo lectura
+*$2020-02-21 14:54:12PABLOP
+ NSSNS 01493   Tipo Relación                                     INNSN 060100016401230254000011000000100005001230150000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-21 14:54:12PABLOP
+*N  NN FIN GAP 14 20200226
+*$2020-02-26 11:50:36PABLOP
+TN  NN 1001TAlta bitacora conyugues                 A33361 00
+/?=(!I20)YI61YI90
+*$2020-05-08 16:18:33ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 16:18:13ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=B
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 16:18:47ESOTELO
+DN  NN 1026SS
+*$2020-05-08 16:18:13ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 16:18:13ESOTELO
+TN  NN 1006TConsulta por fecha                      C00000 00
+/?=I61YI30Y(C1403='C'OC1403='U')Y1=0
+*$2020-02-21 12:31:01PABLOP
+*N  NN **********************************
+ NNNNN 01491   Nro. Persona                                      INNSNA000277018004800370001011000000277004303000147000
+/V=C1401.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01494   Descripción                                       INNSN 000277018004800370001011000000277004303000147000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN prendo I25 si no encuentra registros
+CNNNNN   00000000000000000000100
+/F=C9509=0
+/P=I25
+/M=es cónyuge de la relación
+VNNNNN 040266031401530488NNND000000000000000000000000000000000000000
+/T=2  -  Filiatorios
+/?=!I25
+/C=192192192
+*$2020-05-27 11:22:24FMK
+KNNNNN 040010001900820460000101
+/?=!I25
+/T=Fecha asociada al estado civil
+/F=0012700NNN000000000Arial                                   
+ NNNNN 01495   Fch. Casamiento                                   IDNSN 040038021200610338001010500000038007500610179000
+/?=C1403='C'Y!I25
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01495   Fecha                                             IDNSN 040038021200610338001010500000038007500610179000
+/?=C1403='O'Y!I25
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1006TConsulta por fecha                      C00000 00
+/?=I61YI25Y(C1403='C'OC1403='U')Y1=0
+*N  NN **********************************
+VNNNNN 040266031401530488NNND000000000000000000000000000000000000000
+/T=2  -  Filiatorios
+/C=192192192
+*$2020-05-27 11:22:24FMK
+KNNNNN 040010001900820460000101
+/T=Fecha asociada al estado civil
+/F=0012700NNN000000000Arial                                   
+ NNNNN 01492   Nro. Persona                                      INNSNA040277018004800370001011000000277004303000147000
+/V=C1401.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01495   Fch. Casamiento                                   IDNSN 040038021200610338001010500000038007500610179000
+/?=C1403='C'
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01495   Fecha                                             IDNSN 040038021200610338001010500000038007500610179000
+/?=C1403='O'
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN prendo I26 si no encuentra registros
+CNNNNN M 00000000000000000000100
+/F=C9509=0
+/P=I26
+/M=La Persona no tiene registrada una relación
+TN  NN 1006TFormulario                              C00001 00
+/?=I61
+ NNNNN 01401   Numero Persona                                    INNSNA030037015000600330001011000000037002800600142000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSN 000121015001410437001011000000121002801410126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01418   Apell. Paterno                                    INNSNA030031018000540467001011000000031004300540147000
+/V=C1418.16
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01420   Apell. Materno                                    INSSNA030062018000850467000011000000062004300850147000
+/V=C1420.16
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSNA030093018001160467001011000000093004301160147000
+/V=C1421.16
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01422   Segundo Nombre                                    INSSNA030124018001470467001011000000124004301470147000
+/V=C1422.16
+/m=>
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01402   Fcha.Nacimiento                                   INNSNA030155018001780280000011000000155004301780147000
+/V=C1402.16
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01423   Pais Nacimiento                                   INNSNA030187018002100250021011000000187004302100147000
+/V=C1423.16
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01936   Nombre                                            INNSN 030187029002100467001011000000037002700570125000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01424   Nacionalidad                                      INNSNA030217018002400467001011000000217004302400147000
+/V=C1424.16
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01404   Sexo                                              INNSNA030247018003320370001011110000247004302700147000
+/V=C1404.16
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01403   Estado Civil                                      INNSNA030277018004800370001011120000277004303000147000
+/V=C1403.16
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01446   Descripción                                       INNSNA030306018003290467001010000000306004303290147000
+/V=C1446.16
+/m=>
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01917   Fecha Act Filia                                   INNSNA030298014903210436001011000000298002803210126000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1009TModif. Dirección Real                   M33021 00
+/?=I62
+*$2020-03-03 15:28:49ANDRES
+*N  NN INICIO GAP 8 CLIENTES: Para PF se debe agregar dire Real y Act. Económica
+*$2020-03-03 15:30:25ANDRES
+*N  NN *****************************
+*$2020-03-03 15:30:25ANDRES
+ NSSNN 00901   Opcion ABMC                                       INNNNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-03 15:30:39ANDRES
+ NSSNN 01850   Cliente/Pers                                      INNNNA000007015200300202001011000000007000700300137000
+/V=C1401.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-03 15:30:25ANDRES
+ NNNNN 08222   Formato Dir.                                      INNNNK000047015800670198011010000100047003200670151000
+/V=PF
+/F=0012400NNN000000000Arial                                   
+/c=128128128
+/f=0012700NNN255255255Arial                                   
+*$2020-03-03 15:30:25ANDRES
+ NNNNN 01429   TipoDireccion                                     INNNNK000138015801580198000011000100138003201580151000
+/V=R
+/F=0012400NNN000000000Arial                                   
+/c=128128128
+/f=0012700NNN255255255Arial                                   
+*$2020-03-03 15:30:25ANDRES
+*N  NN * AJUSTE RESIDENCIA
+*$2020-03-20 16:44:49LUISE
+ NNNNN 00604   Residencia                                        INNNNA000007015200300202001011000000007000700300137000
+/V=C1441.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-20 16:45:12LUISE
+*N  NN * FIN AJUSTE
+*$2020-03-20 16:44:54LUISE
+DN  NN 0226SS
+*$2020-03-03 15:30:25ANDRES
+*N  NN *****************************
+*$2020-03-03 15:30:25ANDRES
+*N  NN FIN GAP 8 CLIENTES: Para PF se debe agregar dire Real y Act. Económica
+*$2020-03-03 15:30:25ANDRES
+*N  NN FIN GAP 8: Modificaciones Direcciones para Persona Física
+*$2020-02-27 17:05:30ANDRES
+TN  NN 1001TAlta bitacora direcciones               A33401 00
+/?=I62
+*$2020-05-08 14:22:20ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 14:22:13ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 14:22:13ESOTELO
+DN  NN 1030SS
+*$2020-05-08 14:22:13ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 14:22:13ESOTELO
+TN  NN 1006Tformulario                              C00001 00
+/?=I62Y1=0
+*$2020-02-28 09:19:22ANDRES
+*N  NN INICIO GAP 8 CLIENTES: Para PF se debe agregar dire Real y Act. Económica
+*$2020-02-28 09:19:44ANDRES
+*N  NN Se comenta esta trn ya que no se utiliza
+*$2020-02-28 09:20:00ANDRES
+ NNNNN 01401   Numero Persona                                    INNSNA030040020700630327001011000000040007800630192000
+/V=C1401.44
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01412   Pais Residencia                                   INNSNA040061015300840229020011000000061003400840138000
+/V=C1412.44
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01441   Cod.Residencia                                    INNSNA040287015303100325001010000000287003403100138000
+/V=C1441.44
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1006Tformulario                              C00001 00
+/?=I63
+ NNNNN 01401   Número Persona                                    INNSNA000037015000570330001011000000037002800570142000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSNA000065015000850437001011000000065002800850126000
+/?=1=0
+/V=C1421.46
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-28 14:34:32LUISE
+ NNNNN 01437   Cod. Profesión                                    INNSNA070080015101000232000011000000080002901000142000
+/?=1=0
+/V=C1437.46
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-28 14:34:32LUISE
+ NNNNN 01431   Empl. BCRA/NBC                                    INNSNA070098016401210336001011000000098004201210146000
+/?=1=0
+/V=C1431.46
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-28 14:34:32LUISE
+ NNNNN 01919   Fecha Act Econ                                    INNSNA070265015002880237001011000000265002802880134000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1008TModificación Actividad Economica        S00270 00
+/?=I63
+*&Búsqueda de act. ec. de la persona
+ NNNNN 01224   Nro. P.Física                                     INNSNA620034015400570274001011000000034003600570140000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01226   Empresa                                           INNSN 000007015200300202001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN   00000000000000000000100
+/F=C9509=1
+/P=I31
+CNNNNN M 00000000000000000000100
+/F=C9509=0
+/M=Persona sin Actividades Económicas registradas
+TN  NN 1006TConsulta Actividad Economica            C00000 00
+/?=I63YI31
+*$2020-05-06 09:28:54FMK
+VNNNNN 620002000204520800NNND000000000000000000000000000000000000000
+/T=4  - Modificación Actividad Económica
+/C=192192192
+*$2020-05-06 09:27:11FMK
+KNNNNN 620026002003660770000101
+/T=Seleccione Actividad Económica de la Persona
+/F=0012700NNN000000000Arial                                   
+*$2020-05-06 09:27:11FMK
+ NNNNN 01224   Nro. P.Física                                     INNSNA620034015400570274001011000000034003600570140000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-06 09:27:11FMK
+ NNSNS 00404   Ayuda Empleos                                     IESSN 620082004502830751001010600000109006401290220000
+/L=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 15:34:42ESOTELO
+TN  NN 1009TModificación Actividad Economica        M00271 00
+/?=I63YI31
+*N  NN INICIO GAP10 CLIENTE : Actividad Económica
+*$2020-05-12 16:12:32FMK
+*N  NN *****************************
+*$2020-05-12 16:12:32FMK
+ NSSNN 00901   Opcion ABMC                                       INNNNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 16:12:32FMK
+ NSSNN 01057   Nro Persona                                       INNNNA000007015200300202001011000000007000700300137000
+/V=C1401.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 16:12:32FMK
+ NSSNN 99902   Ordinal                                           INNSNA000007015200300202021011000000007000700300137000
+/V=C1225.49
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-12 16:13:06FMK
+ NNNNN 00834   Tipo de Persona                                   INNNNK000047015800670198011010000100047003200670151000
+/V=F
+/F=0012400NNN000000000Arial                                   
+/c=128128128
+/f=0012700NNN255255255Arial                                   
+*$2020-05-14 16:37:00LUISE
+ NNNNN 01552   Nivel Apertura                                    INNNNK000047015800670198011010000100047003200670151000
+/V=1
+/F=0012400NNN000000000Arial                                   
+/c=128128128
+/f=0012700NNN255255255Arial                                   
+*$2020-05-12 16:13:25FMK
+ NSSNN 01433   Inic.Ingresador                                   INNSNK000007015200300202001011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-06-01 17:49:56FMK
+DN  NN 0227SS
+*$2020-05-12 16:12:32FMK
+*N  NN *****************************
+*$2020-05-12 16:12:32FMK
+TN  NN 1001TAlta bitacora actividad economica       A33341 00
+/?=I63YI31
+*$2020-05-08 12:43:56ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:43:35ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:43:35ESOTELO
+DN  NN 1024SS
+*$2020-05-08 12:43:35ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:43:35ESOTELO
+TN  NN 1009TModif Dirección Act Econ Persona Física M33021 00
+/?=I63YI31YI236
+*$2020-03-03 16:49:49ANDRES
+*N  NN INICIO GAP 8 CLIENTES: Para PF se debe agregar dire Real y Act. Económica
+*$2020-03-03 15:50:37ANDRES
+*N  NN *****************************
+*$2020-03-03 15:50:37ANDRES
+ NSSNN 00901   Opcion ABMC                                       INNNNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-03 15:53:08ANDRES
+ NSSNN 01850   Cliente/Pers                                      INNNNA000007015200300202001011000000007000700300137000
+/V=C33085.50
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-03 16:02:07ANDRES
+ NNNNN 08222   Formato Dir.                                      INNNNK000047015800670198011010000100047003200670151000
+/V=PF
+/F=0012400NNN000000000Arial                                   
+/c=128128128
+/f=0012700NNN255255255Arial                                   
+*$2020-03-03 15:50:37ANDRES
+ NNNNN 01429   TipoDireccion                                     INNNNK000138015801580198000011000100138003201580151000
+/V=AE
+/F=0012400NNN000000000Arial                                   
+/c=128128128
+/f=0012700NNN255255255Arial                                   
+*$2020-03-03 15:50:37ANDRES
+*N  NN * AJUSTE RESIDENCIA
+*$2020-03-20 16:53:35LUISE
+ NNNNN 00604   Residencia                                        INNNNA000007015200300202001011000000007000700300137000
+/V=C1441.50
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-20 16:53:42LUISE
+*N  NN * FIN AJUSTE
+*$2020-03-20 16:53:35LUISE
+DN  NN 0226SS
+*$2020-03-03 15:50:37ANDRES
+*N  NN *****************************
+*$2020-03-03 15:50:37ANDRES
+*N  NN FIN GAP 8 CLIENTES: Para PF se debe agregar dire Real y Act. Económica
+*$2020-03-03 15:50:37ANDRES
+TN  NN 1001TAlta bitacora direcciones               A33401 00
+/?=I63YI31YI236
+*$2020-05-08 14:23:19ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 14:22:41ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 14:22:41ESOTELO
+DN  NN 1030SS
+*$2020-05-08 14:22:41ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 14:22:41ESOTELO
+TN  NN 1009TModificación Persona Física             M00141 00
+/?=I64
+ NNNNN 01401   Número Persona                                    INNSNA000037015000570330001011000000037002800570142000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSN 000065015000850437001011000000065002800850126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+VNNNNN 080002000204560800NNND000000000000000000000000000000000000000
+/T=5  -  Cumplimiento
+/C=192192192
+KNNNNN 080025002002570776000101
+/F=0012700NNN000000000Arial                                   
+CNNNNN  w00000000000000000000100
+/R=F
+ NNNNN 01906   Inc Lista Negra                                   IINSN 080055016500780399001011500000055004500780149000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01907   Inc Lista Negat                                   IINSN 080100016501230252001011500000100004501230149000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 00556   Alfa de 1                                         INNNNK000007015200300202001011000000007000700300137000
+/V=S
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 14:47:31PABLOP
+DN  NN 0141OS01
+/E=TIPO_PERSONA=C834;TIPO_VALIDACION=C556;NRO_DOC=C1014
+*$2020-05-21 14:47:31PABLOP
+ NNNNN 00503   PORCENTAJEPEP                                     INNSNL000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 14:47:31PABLOP
+ NNNNN 00504   PORCENTAJESUJETOOBL                               INNSNL000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 14:47:31PABLOP
+ NNNNN 00505   PORCENTAJETERRORISTA                              INNSNL000007015200300302021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 14:47:31PABLOP
+ NNNNN 02345   Incluido PEPs                                     IINSNK080145016501680252001011500000145004501680149000
+/?=C503=100
+/V=S
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 14:52:50PABLOP
+ NNNNN 02345   Incluido PEPs                                     IINSNK080145016401690251001011500000145004501680149000
+/?=C503#100
+/V=N
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-21 14:52:47PABLOP
+*N  NN INICIO GAP 12 20200316
+*$2020-03-16 11:36:43PABLOP
+ NNNNN 01908   Perfil Trace                                      INSSN 080188016502110399021011000000188004502110149000
+/?=1=0
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-16 11:36:31PABLOP
+*N  NN FIN GAP 12 20200316
+*$2020-03-16 11:36:49PABLOP
+ NNNNN 01920   Fecha Act Gest                                    INNSNA080120015001430322001011000000120002801430126000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1001TAlta bitacora personas fisicas          A33301 00
+/?=I64
+*$2020-05-08 15:02:33ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:36:37ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:36:37ESOTELO
+DN  NN 1021SS
+*$2020-05-08 12:36:37ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:36:37ESOTELO
+TN  NN 1001TAlta bitacora personas fisicas          A33301 00
+/?=I300OI301OI302OI350OI400
+*$2020-05-08 15:02:48ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:36:52ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:36:52ESOTELO
+DN  NN 1021SS
+*$2020-05-08 12:36:52ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:36:52ESOTELO
+TN  NN 1006TFormulario                              C00001 00
+/?=I64
+ NNNNN 01401   Número Persona                                    INNSNA000037015000570330001011000000037002800570142000
+/V=C1401.54
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSN 000065015000850437001011000000065002800850126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01906   Inc Lista Negra                                   INNSNA080055016502780399001011120000055004500780149000
+/V=C1906.54
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01907   Inc Lista Negat                                   INNSNA080100016501940252001011120000100004501230149000
+/V=C1907.54
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 02345   Incluido PEPs                                     INNSNA080145016502390252001011120000145004501680149000
+/V=C2345.54
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN INICIO GAP 12 20200316
+*$2020-03-16 11:36:56PABLOP
+ NNNNN 01908   Perfil Trace                                      INSSNA080188016502110252001011000000188004502110149000
+/?=1=0
+/V=C1908.54
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-16 11:37:05PABLOP
+*N  NN FIN GAP 12 20200316
+*$2020-03-16 11:36:59PABLOP
+ NNNNN 01920   Fecha Act Gest                                    INNSNA080120015001430322001011000000120002801430126000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1009TModificación Persona Física             M00141 00
+/?=I65
+ NNNNN 01401   Número Persona                                    INNSNA000037015000570330001011000000037002800570142000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSN 000065015000850437001011000000065002800850126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+VNNNNN 090002000204570800NNND000000000000000000000000000000000000000
+/T=6  -  Riesgos
+/C=192192192
+KNNNNN 090015001903380778000101
+/F=0012700NNN000000000Arial                                   
+CNNNNN  w00000000000000000000100
+/R=F
+ NNNNN 01434   Fecha de Alta                                     IDNSN 090037016600600253001011500000037004600600150000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01435   Fecha Actualiz.                                   IDNSNA090037048000600567001011500000037036000600464000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01902   Código G.E.BCRA                                   INSSN 090066016500890252021011000000066004500890149000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-11 12:47:41PABLOP
+*N  NN INICIO GAP 11 IMPUESTOS
+*$2020-03-12 17:34:22ANDRES
+*N  NN ^^**************************************************************************************************
+*$2020-03-12 17:34:22ANDRES
+*N  NN ^^********************************************* PENDIENTE CONSULTAS DE FUENTES PARA LOS IMPUESTOS
+*$2020-03-12 17:34:22ANDRES
+*N  NN ^^********************************************* INTERFACES
+*$2020-03-12 17:34:22ANDRES
+*N  NN ^^**************************************************************************************************
+*$2020-03-12 17:34:22ANDRES
+KNNNNN 090091002001860775000001
+/T=I M P U E S T O S
+/F=0012700NNN000000000Arial                                   
+*$2020-03-12 17:36:14ANDRES
+ NNNNN 02787   IGA                                               IINSN 090112013301350305001010500000113004101360130000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-12 18:23:21ANDRES
+ NNNNN 02789   IVA                                               IINSN 090114043001370602001010500000115032401380413000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-12 18:23:24ANDRES
+ NNNNN 01909   MONOTRIBUTO                                       IINSN 090146013301690228001010500000146004101690130000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-12 18:23:28ANDRES
+ NNNNN 02788   SIRCREB                                           IINSN 090146043001690517001010500000146032401690413000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-12 18:23:32ANDRES
+*N  NN FIN GAP 11 IMPUESTOS
+*$2020-03-12 17:34:22ANDRES
+ NNNNN 01921   Fecha Act Riesg                                   INNSNA090245060502680692001011000000245048502680583000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN INICIO GAP 12 20200309
+*$2020-03-10 11:38:20PABLOP
+ NNNNN 00834   Tipo de Persona                                   INNNNA000007015200300202001011000000007000700300137000
+/V=C834.1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-10 11:21:29PABLOP
+ NNNNN 01014   Control DNIC                                      INNNNA000007015200300202001011000000007000700300137000
+/V=C1014.3
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-10 11:33:40PABLOP
+ NNNNN 00556   Alfa de 1                                         INNNNK000007015200300202001011000000007000700300137000
+/V=R
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-10 11:21:01PABLOP
+ NSSNN 01239   Numérico                                          INNSNF000007015200300202021011000000007000700300137000
+/V=0
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-11 12:33:17PABLOP
+DN  NN 0141OS01
+/E=TIPO_PERSONA=C834;TIPO_VALIDACION=C556;NRO_DOC=C1014
+*$2020-03-11 12:33:21PABLOP
+ NSSNN 01239   Numérico                                          INNSNL000007015200300202021011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-10 11:21:01PABLOP
+ NNNNN 33357   Nivel Riesgo                                      IINSNA090265015502880300001011500000266004802890141000
+/V=C1239
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-10 14:31:02PABLOP
+CNNNNN M 00000000000000000000100
+/F=C33357.0=4
+/P=I107
+/M=Nivel de Riesgo Medio – Alto
+*$2020-03-09 16:43:00PABLOP
+CNNNNN M 00000000000000000000100
+/F=C33357.0=5
+/P=I108
+/M=Nivel de Riesgo Alto
+*$2020-03-09 16:43:00PABLOP
+ NNNNN 33366   Estado                                            INNNNK000007015200300202021011000000007000700300137000
+/?=I107OI108
+/V=1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-12 11:46:11PABLOP
+ NNNNN 33368   Motivo Inhabilitado                               INNNNK000007015200300202021011000000007000700300137000
+/?=I107OI108
+/V=5
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-03-12 11:46:11PABLOP
+*N  NN FIN GAP 12 20200309
+*$2020-03-09 16:43:10PABLOP
+TN  NN 1001TAlta bitacora personas fisicas          A33301 00
+/?=I65
+*$2020-05-08 15:03:03ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:37:30ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:37:30ESOTELO
+DN  NN 1021SS
+*$2020-05-08 12:37:30ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:37:30ESOTELO
+TN  NN 1006TFormulario                              C00001 00
+/?=I65
+ NNNNN 01401   Número Persona                                    INNSNA000037015000570330001011000000037002800570142000
+/V=C1401.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSNA000065015000850437001011000000065002800850126000
+/V=C1421.58
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01434   Fecha de Alta                                     INNSNA090020016400430264001011000000020004400430148000
+/V=C1434.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01435   Fecha Actualiz.                                   INNSNA090048016400710264001011000000048004400710148000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01902   Código G.E.BCRA                                   INSSNA090076016500990252021011000000076004500990149000
+/V=C1902.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-02-19 08:05:18LUISE
+ NNNNN 01909   MONOTRIBUTO                                       INNSNA090128019402110281001011000000128005901510163000
+/V=C1909.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 02787   IRAE                                              INNSNA090128019402110281001011120000128005901510163000
+/V=C2787.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 02788   IMEBA                                             INNSNA090128019402110281001011120000128005901510163000
+/V=C2788.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 02789   IPEQUE                                            INNSNA090128019402110281001011120000128005901510163000
+/V=C2789.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 07549   Opcion IRAE                                       INNSNA090128019402110281001011120000128005901510163000
+/V=C7549.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 08978   Serv.Personales                                   INNSNA090128019402110281001011120000128005901510163000
+/V=C8978.58
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01921   Fecha Act Riesg                                   INNSNA090245060502680692001011000000245048502680583000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1009TModificación Persona Física             M00141 00
+/?=I66
+ NNNNN 01401   Número Persona                                    INNSNA000037015000570330001011000000037002800570142000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSN 000065015000850437001011000000065002800850126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+VNNNNN 100002000204560800NNND000000000000000000000000000000000000000
+/T=7  -  Auditoría
+/C=192192192
+KNNNNN 100016001903130777000101
+/F=0012700NNN000000000Arial                                   
+CNNNNN  w00000000000000000000100
+/R=F
+ NNNNN 01428   Fallecido                                         I NSN 100115017002210257001011110000115005001380148000
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN //INICIO
+*N  NN //Campos para el control de la fecha de fallecido
+ NNNNN 00056   Fecha vacía                                       INNSN 100282015003020227000010000000282002703020125000
+/?=C1428='N'
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01430   Fcha. Fallecido                                   INNSNA100282015003020227000010000000282002703020125000
+/?=C1428='N'
+/V=C056
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01430   Fcha. Fallecido                                   I NSN 100165017001880270000010000000165005001880148000
+/?=C1428='S'
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN ME00000000000000000000100
+/?=C1428='S'YC1430>C9500
+/M=Error - Fecha incorrecta
+*N  NN //FIN
+ NNNNN 01922   Fecha Act Audit                                   INNSNA100325015003480237001011000000325002703480125000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1001TAlta bitacora personas fisicas          A33301 00
+/?=I66
+*$2020-05-08 15:03:16ESOTELO
+*N  NN INICIO GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:37:51ESOTELO
+ NNNNN 33948   Alfa de 1                                         INNSNK000007015200300202001011000000007000700300137000
+/V=M
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*$2020-05-08 12:37:51ESOTELO
+DN  NN 1021SS
+*$2020-05-08 12:37:51ESOTELO
+*N  NN FIN GAP 28 TRAZABILIDAD 20200506
+*$2020-05-08 12:37:51ESOTELO
+TN  NN 1006TFormulario                              C00001 00
+/?=I66
+ NNNNN 01401   Número Persona                                    INNSNA000037015000570330001011000000037002800570142000
+/V=C1401.61
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01421   Primer Nombre                                     INNSN 000065015000850437001011000000065002800850126000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01428   Fallecido                                         INNSNA100115017002210257001011110000115005001380148000
+/V=C1428.61
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01430   Fcha. Fallecido                                   INNSNA100165017001880270000010000000165004501880143000
+/V=C1430.61
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01922   Fecha Act Audit                                   INNSNA100325015003480237001011000000325002703480125000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+CNNNNN   00000000000000000000100
+/P=I106
+/A=I105
+FN  NN 6040001      N   
+TN  NN 1001TAlta datos Auditoria                    A00411 00
+ NSSNS 01880   Nro tabla Mod.                                    INNSNK000031018700540233001011000000032007000550170000
+/V=14
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01881   Nro grupo Datos                                   INNSNK000062018700850220001011000000062007000850170000
+/?=I60
+/V=1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01881   Nro grupo Datos                                   INNSNK000062018700850220001011000000062007000850170000
+/?=I61
+/V=2
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01881   Nro grupo Datos                                   INNSNK000062018700850220001011000000062007000850170000
+/?=I62
+/V=3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01881   Nro grupo Datos                                   INNSNK000062018700850220001011000000062007000850170000
+/?=I63
+/V=4
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01881   Nro grupo Datos                                   INNSNK000062018700850220001011000000062007000850170000
+/?=I64
+/V=5
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01881   Nro grupo Datos                                   INNSNK000062018700850220001011000000062007000850170000
+/?=I65
+/V=6
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01881   Nro grupo Datos                                   INNSNK000062018700850220001011000000062007000850170000
+/?=I66
+/V=7
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01882   F. Modificacion                                   INNSNA020092018701150306001011000000092007001150170000
+/V=C9500
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 09506   Hora del Sistem                                   INNSN 000007015200300302001011000000007000700300137000
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01883   Hora Mod.                                         INNSNA020122018701450306001011000000122007001450170000
+/V=C9506
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01884   Iniciales Usu.                                    INNSNA020153043201760551001011000000153031501760415000
+/V=C9505
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01879   Nro. Per./Cli.                                    INNSNA020153043201760551001011000000153031501760415000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01885   Operacion                                         INNSNA020153043201760551001011000000153031501760415000
+/V=C9503
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01886   Sucursal                                          INNSNA020212018702350306001011000000212007002350170000
+/V=C9502
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NSSNS 01887   Asiento                                           INNSNA020272018702950249001011000000272007002950170000
+/V=C9507
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1009TModificacion Generica                   M00340 00
+/?=I60Y1=0
+ NNNNN 01854   Nro Persona                                       INNSNA140044016400670344001011000000044004200670146000
+/V=C1401.1
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01855   Tipo Documento                                    INNSNA140116016401390344001011000000116004201390146000
+/V=C1855.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+ NNNNN 01860   Org. Control?                                     INNSNA140188016402110344001011000000188004002110144000
+/V=C1860.3
+/C=255255255
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1006TConsulta Generica                       C00000 00
+ NNNNN 00028   Concepto                                          INNSNF000007015000270510000011000000007000700270126000
+/V="Modif. Persona Física"
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+TN  NN 1006TLLAMO SUB OPER PARA FORM                C00001 00
+*$2020-02-17 12:59:25AORTIZ
+ NSSNN 02203   Nivel apertura                                    INNSNK000007015200300202001011000000007000700300137000
+/V=1
+/F=0012400NNN000000000Arial                                   
+/f=0012700NNN000000000Arial                                   
+*N  NN *** Indico que operación llama a la oper 950
+ NNNNN 00664   Operacion                                         INNSNK000007015200270302000011000100007000700270137000
+/V=115
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+ NSSNN 00622   Alfanumer. 20                                     INNSNA000007015200270202000011000100007000700270137000
+/V=C1963.1
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-05-12 12:54:34AORTIZ
+ NSSNN 03249   Tipo doc                                          INNSNA000007015200270202000011000100007000700270137000
+/V=C1064.1
+/F=0013700NNN000000000Arial                                   
+/c=127127127
+/f=0013700NNN255255255Arial                                   
+*$2020-05-12 12:54:34AORTIZ
+DN  NN 9498ON00
+*#I63#Actividad Económica
+*#I12#Residente
+*#I150#Persona No Residente
+*#I200#Paso a ser Sector 2 - Publico
+*#I26#la persona ya está casada
+*#I6#ES CUIL
+*#I301#Datos CNA
+*#I30#tiene cónyuge/concubino
+*#I7#ES CUIT
+*#I300#Datos IERIC
+*#I40#Es conyuge/concubino
+*#I290#Caracteres validos en telefono
+*#I108#Riesgo Alto
+*#I41#Algo
+*#I302#Datos Matricula Profesional
+*#I350#Se ingresa ieric opcional
+*#I8#Es CDI
+*#I66#Baja de Dirección
+*#I79#segunda vuelta consyuge
+*#I561#Modifica Dirección
+*#I20#se modifica estado civil
+*#I100#Se modifico Sector
+*#I107#Riesgo Medio-Alto
+*#I560#Alta Dirección
+*#I60#Alta de direccion
+*#I90#hay dato
+*#I21#se modifica estado civil
+*#I11#No residente
+*#I61#Modif de direccion
+*#I22#Existe Registro
+*#I106#33
+*#I110#Hay Clientes Asociados
+*#I400#Cambio AFIP
+*#I10#Nacio en Argentina
+*#I562#Baja Dirección
+*#I62#Organismo Control
+*#I23#existe
+*#I105#2
